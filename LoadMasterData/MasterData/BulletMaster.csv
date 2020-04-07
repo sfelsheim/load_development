@@ -1,0 +1,831 @@
+BulletMasterProfileID,Manufacturer,Caliber,Model,Weight
+dadadd7e-e555-40cf-b79f-34e6b7f05e03,Alco,0.308,RBT AT,220
+88bd27ba-753d-4718-9e8f-132e707c9ac4,ARM,0.308,Predator,176
+fefb6d8f-13e4-4b52-9cfa-b32d45b4f17b,Australia,0.308,HBC,155
+bd3d7588-fc51-4c6d-a17a-323978abfae7,Barnes,0.510,LR Solid,800
+d6fbeae5-c35a-43e2-9774-f2f2cf18d387,Barnes,0.510,LR Solid BoreRider,750
+930bb135-5da6-4f8d-b5bc-54ffc7444303,Barnes,0.264,LRXBT,127
+3de4abea-4b0d-41b4-b591-79bcd5132a8d,Barnes,0.277,LRXBT,129
+c617ed75-5049-4c6c-a833-7e2af424c934,Barnes,0.284,LRXBT,145
+1fc8dc31-930d-458c-a9c7-f2650ead4b10,Barnes,0.284,LRXBT,168
+db7923f2-d8b1-4220-9eb9-e66935a5e863,Barnes,0.308,LRXBT,175
+ba16b752-95ec-477a-81f4-6f9eed6abfa1,Barnes,0.308,LRXBT,200
+4da14068-2797-4a8a-91b4-56cd99eb9403,Barnes,0.338,LRXBT,265
+d99aca27-470a-425a-81c5-b6cad8967f9c,Barnes,0.338,LRXBT,280
+29c986fc-33dc-490e-985a-2de024fa0f66,Barnes,0.375,LRXBT,270
+88020667-2e0a-4ed4-a617-93785e3a90d2,Barnes,0.224,Match Burner,50
+b30122a4-b5db-445c-b4e6-ff02d54515ee,Barnes,0.224,Match Burner,52
+0252bf12-ba04-421d-b91f-15a415ada1ee,Barnes,0.224,Match Burner,69
+307c7b8b-f670-4636-8554-02616fbc5891,Barnes,0.224,Match Burner,85
+9f4c2516-428e-415e-8de5-6119cc4b62a8,Barnes,0.284,Match Burner,171
+b0d35473-3eb7-43b8-a253-b16dc51c6218,Barnes,0.308,Match Burner,155
+50588fb4-e3c9-400f-b00c-94d1fbd91c2a,Barnes,0.308,Match Burner,175
+4b8e0978-7ec4-4955-b3c9-60f6e410562d,Barnes,0.243,Match Burner,68
+77ef5277-95be-4d08-b542-8311c2de7f58,Barnes,0.243,Match Burner,105
+89bda892-1efe-47ad-9263-e4b2c283432e,Barnes,0.264,Match Burner,140
+073a71b3-9aae-48d3-b4dd-2c9815f39929,Barnes,0.308,MLE TacX BT,110
+5aebff5a-2d65-40dd-b37a-43404f1dcf53,Barnes,0.308,MLE TacX BT,168
+b357950b-8904-47f5-8554-a3a1533e96f3,Barnes,0.308,RRLP FB,150
+73e7374c-481f-412d-8a8f-ab9ad9ce4919,Barnes,0.510,Tac LR,750
+1506d433-0a5c-4c65-af4b-466539fb51d8,Barnes,0.338,Tac TXBT,225
+224dc721-e3a2-4d37-8455-b1ed2ad49012,Barnes,0.338,Tac TXBT,265
+ae790cc9-ba0b-46b1-a7fb-089c82a895d4,Barnes,0.224,Tac X,70
+e1e77292-24e9-4fcd-a994-3c837c34fcc8,Barnes,0.510,Tac X,647
+14246d15-8f67-4ff2-9206-4d3613bec22b,Barnes,0.338,Tac X BT,285
+4f5c7e29-ad18-4628-9eef-dd34d8f288ed,Barnes,0.308,Tac X BT,150
+9f28bfab-e867-44ee-ac08-78e117fb1d83,Barnes,0.284,TSX,175
+81052a1d-53ee-45d8-9744-61da052096c7,Barnes,0.224,TSXBT,70
+9ef53837-caf5-44f8-87ed-816a7b152d2a,Barnes,0.277,TSXBT,130
+2bb4ca1c-aa73-4a32-8205-e291b70eaab5,Barnes,0.277,TSXBT,140
+a7264fd4-d50f-4ed8-9c3a-d2f326dd40cd,Barnes,0.308,TSXBT,165
+892c7bd1-f34d-48f8-9ef2-4053834cff72,Barnes,0.308,TSXBT,168
+b99d82d7-3e87-48c1-bd59-1f539c16c3ed,Barnes,0.308,TSXBT,180
+c8e4fb01-16f7-48da-b67d-369ec55f3eef,Barnes,0.338,TSXBT,285
+0c09eb7d-dc94-408f-9f08-52cc3aab0f53,Barnes,0.257,TSXFB,115
+78370a4f-8d13-48a4-b50a-f5c4625e6dc0,Barnes,0.284,TSXFB,110
+49f1461b-9d5f-4449-8e01-5233aca88522,Barnes,0.224,TTSX,55
+c80337be-f03b-471d-aa53-d7989a7826ad,Barnes,0.257,TTSX,100
+4e0ed9f1-8e6e-4d65-8d1b-bb96bc7bba6e,Barnes,0.308,TTSX,110
+8bb3cb29-c7b2-4132-afc4-a5f236bb05a3,Barnes,0.224,TTSXBT,62
+aae37fa9-9382-49f7-b1a8-eba3ce6ad8a3,Barnes,0.243,TTSXBT,80
+3850395c-5b64-44d0-9417-9882ac17ead6,Barnes,0.257,TTSXBT,80
+3f48ddc3-5118-47c1-be9e-270398669302,Barnes,0.264,TTSXBT,100
+f90d7920-d14b-419f-b8f6-e4c0b867fb91,Barnes,0.264,TTSXBT,120
+222d0370-a002-489d-aa98-6380e5bb6639,Barnes,0.277,TTSXBT,95
+625168bb-cb8a-48fd-9ebe-e039edf678f2,Barnes,0.277,TTSXBT,110
+165007eb-d05e-4b14-b684-b8d2de02364a,Barnes,0.277,TTSXBT,130
+2f8db041-9dea-4945-9d4a-2a67f50de01b,Barnes,0.284,TTSXBT,120
+c37e3902-fd28-4d0f-90f2-b916c5f5a459,Barnes,0.284,TTSXBT,140
+c889e86b-41ec-4714-94b9-4db0dd79f8ee,Barnes,0.284,TTSXBT,150
+4e196324-bc2a-409a-b1a0-52c2074fb542,Barnes,0.308,TTSXBT,130
+252ee537-0de9-49b4-9520-632f1d6a15fb,Barnes,0.308,TTSXBT,150
+34d6f0d0-8b76-4c24-9475-29a989e1ac41,Barnes,0.308,TTSXBT,165
+316bd862-64f1-43d1-b256-e62a8210c0fb,Barnes,0.308,TTSXBT,168
+3228adde-8057-4384-a3d7-3268844ea748,Barnes,0.338,TTSXBT,185
+382c2fdd-a9fd-42eb-9f63-c5a3d45a6047,Barnes,0.338,TTSXBT,210
+ddf9b009-de74-4dda-8841-e9656982ad7f,Barnes,0.338,TTSXBT,225
+67506b70-43e2-42aa-9379-e4b98b5f7ba3,Barnes,0.284,TTSXFB,110
+9ab4ef7f-83f0-4d4f-bf4f-088135ac22a9,Barrett,0.416,Brass Solid,398
+321b16e3-8be4-4135-a463-b8d4b90701af,Barts,0.243,RBT,105
+c0554f6d-dbbe-4f35-8c38-ddb46de02329,Berger,0.243,Classic Hunter,95
+54c896f5-1ee0-4787-b5b2-00f2ed1c9ae5,Berger,0.264,Classic Hunter,135
+5966d661-2122-4baf-a347-b9d16b7675d2,Berger,0.277,Classic Hunter,130
+82dbaaba-2b39-4270-a834-ae99112d39d1,Berger,0.277,Classic Hunter,140
+731a6fc4-a977-4e63-a058-69e7c6ba5b78,Berger,0.284,Classic Hunter,150
+d49fd39f-963b-4517-91a1-f144507ebda6,Berger,0.284,Classic Hunter,168
+459e21ac-f98d-4a0d-888a-af59313d9f44,Berger,0.308,Classic Hunter,155
+29f3a09f-54d1-49f3-898f-670e8a4c1be7,Berger,0.308,Classic Hunter,168
+a790997b-aafe-4fca-883b-9bcafc8da22e,Berger,0.308,Classic Hunter,185
+f177f50a-7ee5-486a-bae6-a8a89cf56535,Berger,0.264,Elite Hunter,140
+50423338-a468-431a-b8a8-95e3f8a57eb5,Berger,0.277,Elite Hunter,170
+16ee0179-cfaf-435b-aaf0-353453c627b4,Berger,0.284,Elite Hunter,175
+4a2fda65-adf5-40d8-a164-204baee77d82,Berger,0.308,Elite Hunter,180
+ee898fbf-4158-4889-9d3e-536771972863,Berger,0.338,Elite Hunter,250
+70067fab-1064-4e4e-87d4-ccd42b85a431,Berger,0.338,Elite Hunter,300
+4e5bc474-1f8d-4df4-8693-0db585a7bc5f,Berger,0.264,EOL Hunter,156
+56f91a8a-6026-4364-af69-1e31af139359,Berger,0.284,EOL Hunter,195
+3dbd5f02-1670-4eab-be11-d946d1002ef1,Berger,0.243,Hunting VLD,87
+0106b7fd-2892-47c8-a44b-043ca85bc351,Berger,0.243,Hunting VLD,95
+94b19b20-5ce0-423c-a656-40987ba1c6c7,Berger,0.243,Hunting VLD,105
+8233b0cf-d334-47d5-9669-b58e9ceda81e,Berger,0.243,Hunting VLD,115
+654d1058-0bee-4d9e-971e-ce248eb9c516,Berger,0.257,Hunting VLD,115
+0a175ce8-7210-4912-9988-1240db7f2bab,Berger,0.264,Hunting VLD,130
+3db5f0a3-1655-45e3-a131-4f57583563c4,Berger,0.264,Hunting VLD,140
+5ca6dd46-511a-4f05-b114-b0409b99cc27,Berger,0.277,Hunting VLD,130
+0eb97f2f-c8e5-4dfa-949d-8183ae31d012,Berger,0.277,Hunting VLD,140
+7e0ca506-c992-456d-a7e8-31320f3645b8,Berger,0.277,Hunting VLD,150
+bf32c088-5da8-411f-a5ec-b8450e7b2e86,Berger,0.284,Hunting VLD,140
+24bd386a-c5d3-45aa-955a-cee68c2837a6,Berger,0.284,Hunting VLD,168
+c2d343f9-bcf9-4f72-8c5a-b51bae4b36a7,Berger,0.284,Hunting VLD,180
+72034479-26a4-41fb-a127-0a6cc7054c43,Berger,0.308,Hunting VLD,155
+bb91beff-3aa4-4a8f-a27a-4d32ec7f4d1d,Berger,0.308,Hunting VLD,168
+661c6c5e-a389-42e6-b2e5-ecdfebf1c67d,Berger,0.308,Hunting VLD,175
+526e9a3a-7f7f-46a2-9d18-37d8783064fa,Berger,0.308,Hunting VLD,185
+0d34923d-d941-41e8-871d-6a1e47082945,Berger,0.308,Hunting VLD,190
+c9c749e3-f2f7-4800-8b97-5a5ed1f25b44,Berger,0.308,Hunting VLD,210
+c7a23759-0e6f-4739-ac41-e1d6ebc96fd0,Berger,0.338,Solid (Prototype),301
+294e4b97-1375-4224-8d1a-96971bf73ab1,Berger,0.375,Solid (Prototype),379
+484a6f0c-046c-4db7-baed-828689f5190f,Berger,0.375,Solid (Prototype),407
+d8468e49-db1e-4485-829b-6428215af748,Berger,0.264,Tactical AR Hybrid,130
+c01cfcaf-8af6-422c-9382-d824203f7719,Berger,0.224,Tactical OTM,77
+c1da4a56-ee9b-4693-9232-6fce837b95c5,Berger,0.308,Tactical OTM,175
+bb4b28c4-7682-4be8-8883-4440991e4f95,Berger,0.338,Tactical OTM,250
+490a68fd-a68c-48fc-a0f0-2e268d4c5c29,Berger,0.308,Tactical OTM,230
+6735f6e2-0ca5-41d6-b57d-c7f079ea2281,Berger,0.338,Tactical OTM,300
+25dde622-31c9-4250-9b42-375702121215,Berger,0.308,Tactical OTM Juggernaut,185
+504d2ecf-0cba-455c-aa82-09398b3032a0,Berger,0.243,Target BR Column,64
+53462775-df63-44b4-aabb-aa6ea0230b30,Berger,0.224,Target BT,73
+71d73d29-ebac-47d1-a118-7d8b67987f34,Berger,0.224,Target BT,82
+8dc58415-e964-4c2f-9d01-fef81ad9c5bc,Berger,0.243,Target BT,65
+6b9fbbc8-ff5f-46c7-8a75-dcca213308e5,Berger,0.243,Target BT,90
+679e898b-b3e9-4890-846b-9f424f27853d,Berger,0.243,Target BT,105
+e9f84278-f3f5-49f3-80ec-c3d553b21b84,Berger,0.243,Target BT,108
+9e36d567-e7e7-462c-ad6a-20618a781198,Berger,0.264,Target BT,120
+6b886c41-97dc-40d2-80a3-4b4b54b72374,Berger,0.243,Target Euwin,62
+b35ee5fc-5c6a-44ff-a1fb-2d8754ee7131,Berger,0.224,Target FB,52
+eb1249e0-9c38-431a-8aa1-dcf19a41d924,Berger,0.224,Target FB,55
+f2a5d852-3624-4f3f-aaa6-165dc4ad2a8e,Berger,0.243,Target FB,68
+0fa2330a-cb6c-4bd8-84a7-0c3c1c93fdd9,Berger,0.308,Target FB,115
+b9ad86ea-774a-4a54-83c1-4ef7f8d5a3c3,Berger,0.308,Target FB,150
+6aff7415-85e7-4797-9689-67cba9bb8f96,Berger,0.224,Target FULLBORE,80.5
+99954406-f213-4e23-b79f-419e5fd4b0da,Berger,0.308,Target FULLBORE,155.5
+9787b6df-10fd-4403-9b7b-531aee2b1f98,Berger,0.243,Target Hybrid,105
+e536aabe-ccb1-49fa-8848-73ace9037a68,Berger,0.264,Target Hybrid,140
+babf7d40-3589-4241-8c27-4365619dc0bd,Berger,0.284,Target Hybrid,180
+f39b0006-ad52-4f81-8c64-61340c99baf6,Berger,0.284,Target Hybrid,184
+3f30adc7-c5c7-412b-9a13-60a37129ec13,Berger,0.308,Target Hybrid,155
+94df63f2-bb8f-4f8c-86d1-c64a8fa5dfab,Berger,0.308,Target Hybrid,168
+45ac5b59-4270-447f-906f-ebabf5821a2e,Berger,0.308,Target Hybrid,185
+43a08e46-b863-48d3-8b2d-cc5539f76b9a,Berger,0.308,Target Hybrid,200
+01d13c67-4668-41a0-a1b4-ba7bc8793dce,Berger,0.308,Target Hybrid,215
+b67d309b-4e0a-4e40-9c83-ada49e493cdf,Berger,0.308,Target Hybrid,230
+9a3eea7c-0395-4778-a4c1-09c8a3ff7079,Berger,0.308,Target Hybrid 20X,200.2
+7f6ecc87-4286-46d2-9e16-4efff9fb9601,Berger,0.308,Target Juggernaut,185
+76aecd31-a3e7-4df4-a5b5-19f0a64dbb8d,Berger,0.264,Target LRBT,140
+0ae01c3c-d1f2-414c-ac7b-cc80e9c297f0,Berger,0.308,Target LRBT,175
+1ab944a7-f4b9-4d7b-88b8-e2a5895ed8b7,Berger,0.308,Target LRBT,210
+8a67965e-b1ef-4e2f-8c5a-e01859844127,Berger,0.224,Target VLD,70
+f922d356-1b15-4f3b-8b26-806800bf314e,Berger,0.224,Target VLD,75
+94ee1b9e-8ac7-4724-9157-9e94352da4ea,Berger,0.224,Target VLD,80
+2945fd1d-6ac2-4d47-aaa0-308ea5b39c04,Berger,0.224,Target VLD,90
+850431b2-9c0f-4540-9fb4-733058a95df6,Berger,0.243,Target VLD,95
+2ae04098-0be4-4d8f-b821-cc188e65668a,Berger,0.243,Target VLD,105
+86504499-4433-4a4b-956d-1d564911037e,Berger,0.243,Target VLD,115
+66df398d-663e-41a4-8356-536d54872b51,Berger,0.264,Target VLD,130
+92f210bc-2fa7-4b03-87d4-e3a520758860,Berger,0.264,Target VLD,140
+34d871b1-cdf6-40b8-8d41-831e262b9dc8,Berger,0.284,Target VLD,168
+9aaa3d6b-c718-42f9-90b4-0c3fae850aca,Berger,0.284,Target VLD,180
+c77b7381-5ccf-4625-87fe-e3b4be559688,Berger,0.308,Target VLD,155
+d37fb122-d88c-4ef1-88e7-3fd8f5e31512,Berger,0.308,Target VLD,168
+934f8964-ee3a-419e-a852-4fd3ed8a0925,Berger,0.308,Target VLD,175
+95a60b29-d224-4fae-b6af-6eb6f9bcc82c,Berger,0.308,Target VLD,185
+930a44db-be0c-4868-a4e5-2824571465bb,Berger,0.308,Target VLD,210
+669b322c-48a5-48d9-90da-7c754b89ead1,Berger,0.243,Target WEB,65
+676521ef-b62c-4686-a5e2-f1180974a08f,Berger,0.204,Varmint BT,40
+d0763551-f76d-47aa-aa1b-f0bba0536074,Berger,0.204,Varmint BT,55
+7b3931d7-c54c-48a6-b81f-91a2fac1a446,Berger,0.172,Varmint FB,25
+1bf1c52e-4662-45cb-8c1b-c4d181cf3f15,Berger,0.204,Varmint FB,35
+01255754-4fec-4f3b-bcbb-9c2585a955f2,Berger,0.224,Varmint FB,40
+dfa73b6c-4dad-4559-bff7-5f259997831e,Berger,0.224,Varmint FB,52
+2af1b7e4-9cfb-4fb2-a6de-d3d47323c8d1,Berger,0.224,Varmint FB,55
+339a1de4-4b3f-4f6b-b54f-f4be37bf9b5f,Berger,0.224,Varmint FB,60
+75e7f976-8b15-40f7-80b4-e626b49ba92d,Berger,0.224,Varmint FB,64
+42f56547-b3c1-4f7b-bc9c-202598b726e7,Berger,0.243,Varmint FB,80
+220fbd0d-80f1-4e85-a064-a0416341a511,Berger,0.243,Varmint HBCFB,69
+61b2f2b8-06ea-42f5-81e8-2dba0b1bafb0,Berger,0.243,Varmint HBCFB,88
+dcbd8105-6373-4cac-96c2-957600efa9af,Cauterucio,0.264,10Ogive,119
+6f9cbe69-7d64-459d-864f-f45bf6906859,Cauterucio,0.264,15Ogive,119
+c57f9d5b-3d93-48b2-80fc-8dba068a9752,Cauterucio,0.264,HPBT,146
+4b009d1d-5379-4f60-bf13-de5c855d952f,Cauterucio,0.264,HPBT,152
+27202678-4fee-4b56-9be8-03b768f22646,Cauterucio,0.284,HPBT,163.5
+9c3f6162-2251-478d-b5b1-39bf5cd554b8,Cauterucio,0.264,VLD,131
+a1c77205-1615-46fe-a4e6-3c6457ac4710,Cauterucio,0.264,VLD,155
+de3a3fb4-8021-42b0-998a-dcf2dc9b5f21,Cauterucio,0.284,VLD,177
+1f6f3825-a79e-4927-be3e-276ce7e58a22,Cauterucio,0.284,VLD,189
+3a9c9a39-e9e9-4270-96f5-07d9eb1ddf4d,CheyTac,0.375,Balanced Flight Solid,350
+a070ecb4-7eb3-4ab4-affe-163498a8c808,CheyTac,0.408,Balanced Flight Solid,419
+6ab1ad2c-ee6d-4130-a6ea-70f881358ef2,CheyTac,0.408,Solid,305
+81e5c5f7-4c3d-4cce-bf88-168c1324cd6f,Chinchaga,0.338,RBT ST Hybrid,300
+7c21ef5e-5d01-47dd-8977-4a6ac2ec1de6,Chinchaga,0.264,RBT ULD,168
+ed7f981d-b550-413f-9e70-d2effe866062,Chinchaga,0.308,RBT ULD ST,236
+0277c328-bc9a-4eff-8af3-f86789d08d25,Chinchaga,0.284,RBT ULD ST Hybrid,168
+5dec849b-496e-40f2-8f34-9238c5305410,Chinchaga,0.284,RBT ULD ST Hybrid,196
+18c21c45-16d5-42ee-a99c-a1aa5f5e7420,Chinchaga,0.284,RBT ULD ST Hybrid,226
+ad75a4ec-4947-44ac-a2e3-fdacb3b829ae,CKYA Thomas,0.308,Al Tip,217
+03a7dbb4-2ff4-4299-96d8-c0720c19ca36,CuttingEdge,0.277,HPBT,120
+36dbe8c4-1a9d-4c71-a069-9e4aee2c3959,CuttingEdge,0.277,HPBT,130
+22cb9eb4-7410-4c3a-9f81-83d919dd09ff,CuttingEdge,0.308,HPBT,180
+d1c337cb-7ad4-45a6-8c16-f549025d04d7,CuttingEdge,0.338,HPBT,300
+ccf91b99-eeb2-4984-8380-5032a2efa971,CuttingEdge,0.308,Lazer,165
+e918e157-1dbb-4e77-a29e-401016cb5514,CuttingEdge,0.308,Lazer,220
+cad35390-adea-4c0e-85d4-e50ec85afc27,CuttingEdge,0.308,Lazer,240
+694d0198-9e0c-4510-9a38-48fd7615b88c,CuttingEdge,0.338,Lazer,225
+05fde448-6809-49e0-8d3f-e87380b7d834,CuttingEdge,0.338,Lazer,250
+07c71782-a26b-41fd-b567-c4cc4b283230,CuttingEdge,0.338,Lazer,275
+b7af8e63-f146-40aa-9788-3170766da2ec,CuttingEdge,0.375,Lazer,325
+7ca6d000-e78d-4b18-b7e7-8d3847636bd2,CuttingEdge,0.375,Lazer,350
+f0ecfeb1-7104-484e-b620-ca6aa63d4053,CuttingEdge,0.408,Lazer,425
+836fd4e0-37be-4ba7-9cc2-0b4a92645b29,CuttingEdge,0.408,Lazer,450
+bf966ee6-de25-4ff0-89df-e70b31939c5d,CuttingEdge,0.408,Lazer,475
+fa7f16f9-10a9-475d-bba0-6870441bfea9,CuttingEdge,0.416,Lazer,500
+33f3c071-dfcf-45e4-869c-a332f06f67fb,CuttingEdge,0.416,Lazer,550
+fa8632ba-f498-4b7e-aedd-6c2f1e7edc5c,CuttingEdge,0.308,Lazer Max,180
+cd3bbd89-e039-4bda-bd40-33f9a328e38c,CuttingEdge,0.375,Lazer MAX,375
+99f4c979-5555-4234-8140-8b0b17f6cb23,CuttingEdge,0.375,Lazer MAX,400
+bd65ec53-5f7e-4a81-ad4e-9d48b65c90e6,CuttingEdge,0.375,Lazer MAX,425
+635f2741-967c-4aa7-8f88-8fd8c95e0e90,CuttingEdge,0.308,Lazer STD,180
+4b7daa2a-849e-4295-80bd-8a6ecb579ce0,CuttingEdge,0.308,LDHPBT Max,180
+6f9e00c3-2f6f-4d8d-b076-0ce999108ac7,CuttingEdge,0.264,MTAC,133
+76210851-24e5-4c70-86ca-312d0a63bed2,CuttingEdge,0.264,MTAC,143
+251aa91f-eead-4e75-84c0-741eac7431a7,CuttingEdge,0.338,MTAC,254
+809acba7-3938-437f-82c4-4cab0901a9b4,CuttingEdge,0.338,MTAC,277
+82ea3bd9-3c15-4b11-bf7c-c71981156b03,CuttingEdge,0.338,MTAC,302
+48aceb53-30e0-4163-af83-48d3854efd68,CuttingEdge,0.375,MTAC,352
+7328b4ff-abb8-452f-96d5-9842fbc70943,CuttingEdge,0.375,MTAC,377
+b4faee64-7b99-431b-bbaf-99f73f30a433,CuttingEdge,0.375,MTAC,402
+537991c2-5995-4eb1-baec-bdf448d488cb,CuttingEdge,0.375,MTAC,427
+4c41d2a9-ee9a-433a-bffd-eb78b7414864,CuttingEdge,0.375,MTAC,452
+a7ca53e0-84b5-44f4-8c79-cb271d6cd4c3,CuttingEdge,0.408,MTAC,395
+26eb392b-8a3b-4c9f-a3f6-7f5acd1191fd,CuttingEdge,0.408,MTAC,420
+02f546a1-f089-492a-a8f0-dc81acfd3ae3,CuttingEdge,0.416,MTAC,422
+03bd5ab1-ec4a-493f-abe5-26e2ed9d0876,CuttingEdge,0.416,MTAC,446
+3321cca4-3456-4f40-8163-9a2b31ab2801,CuttingEdge,0.416,MTAC,472
+25762509-6aa7-418a-9395-bc7db0e699c0,CuttingEdge,0.510,MTAC,720
+7bd74117-8a86-43fa-8c22-b1c7ec997d63,CuttingEdge,0.510,MTAC,762
+dccefcdd-2b11-4863-ad37-a5602195b73d,CuttingEdge,0.510,MTAC,802
+82fe3871-e2a1-434e-b430-704c9445cd9e,CuttingEdge,0.416,MTAC MAX,450
+2d409b0e-abc5-4574-8871-5626bc74f5af,CuttingEdge,0.264,MTH,130
+4365374a-d307-4a8d-8560-567681e7daba,CuttingEdge,0.264,MTH,140
+4c96439f-b48f-4603-b508-396bc4cf1807,CuttingEdge,0.284,MTH,180
+9082a46e-bfea-406e-9e9a-98ad7b378000,CuttingEdge,0.308,MTH,140
+0d5e0c06-3764-4cf6-9a9c-7a8f29807f1f,CuttingEdge,0.308,MTH,165
+e89305df-d98b-4c48-867e-38594bcc2e65,CuttingEdge,0.338,MTH,175
+4963b053-7759-4e02-b6b4-5365e0836ad6,CuttingEdge,0.338,MTH,200
+557c5066-b6af-4482-b0cf-e059d677572d,CuttingEdge,0.338,MTH,225
+6c7c3f8b-7c17-4906-9267-1edd6af22988,CuttingEdge,0.338,MTH,252
+29afb1af-1af1-4bc4-9116-edae2538c67f,CuttingEdge,0.338,MTH,265
+512eae39-da13-4026-9859-3d1ce8fc9a4d,CuttingEdge,0.338,MTH,275
+834fd0e6-698f-4838-8a0c-923633749fca,CuttingEdge,0.338,MTH,300
+499e4f4e-6538-4019-8121-1b8083fd201a,CuttingEdge,0.375,MTH,300
+2dfac11a-ac42-44dc-9e35-0d2e656a3d52,CuttingEdge,0.375,MTH,320
+03a42571-953e-422f-904f-be6935395df0,CuttingEdge,0.375,MTH,330
+29f4c78b-91aa-436f-b3f4-8caa9f79770a,CuttingEdge,0.375,MTH,350
+9a2b58be-35da-44c3-9c7e-52675467d194,CuttingEdge,0.375,MTH,375
+95a7be65-3737-4349-a4b3-1ea3b5d9488e,CuttingEdge,0.408,MTH,390
+8c5bfd27-f550-4b77-aa42-1ae0aaf8160f,CuttingEdge,0.408,MTH,415
+18650123-6f6e-43f5-9275-0b540ce68019,CuttingEdge,0.416,MTH,420
+1fee205f-ff9d-40b5-9f6a-4db4ba0255a8,CuttingEdge,0.416,MTH,444
+40a1a638-f1f7-499a-bf6c-fe51752189a1,CuttingEdge,0.308,MTH C21,180
+e100065d-3f00-45f2-a456-1f7c7291826c,CuttingEdge,0.308,MTH MAX,190
+195f237d-695b-4136-9364-1be2fac672ca,CuttingEdge,0.284,MTH168MAX,168
+56af27f3-f540-421f-862b-098a8dbf281b,CuttingEdge,0.284,MTHJ07,155
+53867430-1a6f-4552-8331-4c5eb99320c9,DAG,0.308,DM111 Ball FMJ,147
+b2a2ae1d-b76b-4d6f-8b57-901c681d8b92,DAG,0.308,NR474,163
+36cfb76d-e7d7-41fd-8e3c-cfc1ef6487ec,Dietlein,0.308,ULD,155.5
+c7668eae-9d8b-44ec-a263-a8674da4df55,Dietlein,0.308,ULD,168
+f8ba6fcb-9803-4890-b937-bcbab8bddd8f,Dietlein,0.308,ULD,173
+1d6607d6-c688-46cd-bb7a-9625c245f33f,Dietlein,0.308,ULD,175
+2866e6ef-4b64-44ca-a1df-71f4b9d88738,Dietlein,0.308,ULD,185
+8ce81d24-7468-435a-acbc-4a62bae051bc,Dietlein,0.308,ULD,190
+78c97f93-2b2e-46c6-bee8-cafeae39f582,DRT,0.224,Frangible,79
+38986c3f-d991-4f63-8dc2-c95d4499d34d,DRT,0.308,Frangible,175
+249f2143-544d-4451-8358-d9304ec8c2e6,DRT,0.308,Frangible,200
+b8b53e03-b649-471b-8778-ec7c2bd8124f,DTAC,0.243,BTHP,115
+0753a41c-091f-49d7-a569-55aa32fd3b7c,DTAC,0.243,RBT pointed,115
+66cf5488-5c24-4f38-ba71-5b127643e627,DTAC,0.243,Tipped,117
+d4a7ef4e-64cd-4ee5-a1e8-5aa81bcd7713,Federal,0.308,Tactical Bonded JSP,165
+2b7a7ab4-2d1e-4c9a-8714-14569cedf1bd,Federal,0.308,Tactical Bonded Tip,168
+7d76c4b2-44f4-4970-9319-64b6d9d18ebc,FreedomMunitions,0.510,FMJ BT,647
+1d461c18-f931-4439-8be0-3bef6e6dc5a4,G9,0.243,Competition,87
+8b73386f-aa07-4787-a851-1d78194c878e,G9,0.264,Competition,103
+5b9fc708-8d23-47e2-9e48-566b4b67d106,G9,0.264,Competition,113
+c9cd42b2-df30-4cf2-9fbc-11a7c4adadb0,G9,0.308,Competition,154
+e4654bde-9f42-4afb-87f7-163c767256f9,G9,0.338,Competition,232
+86d5fa0d-7e0e-4a10-be2a-ea84342bffcd,General Dynamics,0.510,Sniper Elite Ball,704
+58b8beeb-b24c-4ed0-afc1-1bc9378b4478,General Dynamics,0.510,Sniper Elite AP,756
+d96c7399-5915-4adf-8162-1161fb62c73d,General Dynamics,0.510,Sniper Elite API,756
+380ebda7-928d-4798-8883-10cdad06c280,GSCustom,0.224,SP,57
+104ccdd6-91d3-4a09-9aad-cd26d0d03420,GSCustom,0.224,SP,69
+1d7f542f-8415-44d3-b0c4-6b9a66de776e,GSCustom,0.243,SP,81
+77a5567d-752b-49db-aa2a-96890e776682,GSCustom,0.243,SP,109
+101f778f-c2ac-4ee5-b6f1-892bfdfc7a67,GSCustom,0.257,SP,90
+f28036ab-4ca3-4f38-8c1a-a97cb297df03,GSCustom,0.264,SP,112
+36feda84-b798-41b3-97e4-9903173c2039,GSCustom,0.264,SP,119
+07118ea9-ae3d-4240-a7e2-b3fbccb06124,GSCustom,0.264,SP,128
+2e6add96-3244-4b8c-b4ab-fd1a3372090e,GSCustom,0.277,SP,105
+f7f3ad8a-c714-4fb8-b6b8-7867f00f4b06,GSCustom,0.284,SP,125
+aa10601f-5f46-495c-b840-0166715bf764,GSCustom,0.308,SP,137
+c5594447-290e-42e7-aa35-d797f5691339,GSCustom,0.308,SP,158
+29cc034e-c617-43cd-9837-2512495d2a4f,GSCustom,0.308,SP,167
+20320dfd-4d2d-4cd2-9486-e51b2a7a86ee,GSCustom,0.308,SP,197
+31c167c4-5053-4772-b286-53a5ddc9ef8d,GSCustom,0.338,SP,200
+56c67800-195e-4ab7-b879-bfc6cb9d72bf,GSCustom,0.338,SP,232
+a9abce62-280d-482a-81af-0e61915592e3,GSCustom,0.338,SP,267
+24c4cc64-a36d-46b2-aa41-88802954f366,GSCustom,0.375,SP,291
+17d242db-b603-44df-a28a-f9b1d425a64c,GSCustom,0.375,SP,330
+efb301f2-1c43-45c9-a1d8-d4212daf701d,GSCustom,0.375,SP,355
+f12ccc07-a94e-4439-97af-107096c49429,GSCustom,0.375,SP,414
+5a7be817-4fdc-46af-a6ba-be64ba08e0bd,GSCustom,0.408,SP,385
+07c49a77-a1ae-4025-bb15-113a2aab7f56,GSCustom,0.416,SP,420
+a3891905-2655-43d2-9ff9-a186c56a327e,GSCustom,0.510,SP,720
+c66e8d43-26a4-4708-9c2b-2b3d827ff16b,GSCustom,0.510,SP,800
+18208a89-6201-4de5-b806-6bb0b2fc776a,GSCustom,0.510,SP,1030
+108a5fb0-c3fc-4b7a-8690-ef07547621cc,GSCustom,0.510,SP,1100
+e8363b4d-8be3-4055-b763-7aae74b4b50b,Hammer,0.243,Hunt,80
+4a3d6c42-1f14-4c8d-9d7b-da9d499294bb,Hammer,0.243,Hunt,88
+f30543b1-ff3c-44bc-8e3f-34b693953775,Hammer,0.243,Hunt,101
+96825b0e-67ed-4c4c-8669-20de7d20cc9c,Hammer,0.264,Hunt,125
+a1cc8f52-b1fa-4bb7-b7ca-f11db65765ce,Hammer,0.277,Hunt,117
+f36a2535-8446-48c6-b3e8-3f1ec4ab0715,Hammer,0.277,Hunt,156
+5a9751c6-21a9-4f71-bc24-3d7bc008858c,Hammer,0.277,Hunt,168
+46f57cf0-7efe-4839-8c81-82842c6a2454,Hammer,0.284,Hunt,133
+2ed7a407-6ef8-476e-a3d2-a8740bc50a4f,Hammer,0.284,Hunt,155
+76ad7ea3-60cf-474d-9170-4e363266857f,Hammer,0.284,Hunt,177
+192e6d18-6164-41ff-8fd3-857168b10c48,Hammer,0.308,Hunt,152
+608bdae7-71e5-4fc6-b45f-37b42c0b99b3,Hammer,0.308,Hunt,166
+75d09485-83d0-43c5-b99a-eef6087974d0,Hammer,0.308,Hunt,181
+e22286dc-2d4c-4f3e-a45b-56b00f5d175f,Hammer,0.308,Hunt,214
+4fa8dda4-364a-4fde-ba34-89371b98b612,Hammer,0.308,Hunt,227
+62383e6d-543f-460a-aad1-bb12bc2db05d,Hammer,0.338,Hunt,260
+e8e0c031-240f-42b7-9fc0-90069f93b6d8,Hammer,0.338,Hunt,307
+046428cc-3562-42ff-9670-e175184818a9,HBC,0.308,HPBT,155
+9b9675e9-f6b2-482e-bec2-bc9daa4dfc87,Hoover,0.264,VLD,136
+4ceae9e5-6c69-4078-acdf-f4208446b596,Hornady,0.243,A-Tip,110
+da427df7-0840-4993-b83b-766f149f9da2,Hornady,0.264,A-Tip,135
+15a16dcd-db1a-48a8-a459-4568e5148506,Hornady,0.308,A-Tip,230
+4fe06079-5c76-4313-946c-db44dff4945f,Hornady,0.204,Amax,32
+d56eeb29-c184-4531-8c7a-8cb591dc2425,Hornady,0.224,Amax,52
+19f7d772-e68a-4c12-995f-99137078bd06,Hornady,0.224,Amax,75
+7906e943-6b25-476a-854d-b04a0b54b5d7,Hornady,0.224,Amax,80
+30240dbf-d45e-49df-973c-7bc480dce609,Hornady,0.243,Amax,105
+e5500b1e-8915-4333-91f3-312f53e5a152,Hornady,0.264,Amax,100
+dfd21d08-4e48-417c-a65f-e0470867c500,Hornady,0.264,Amax,120
+c0f03626-0420-48a6-a79f-e9c8f4141e69,Hornady,0.264,Amax,123
+14a84f58-fd3a-4ba9-b6a7-b791582757f0,Hornady,0.264,Amax,140
+c9647766-ba89-4049-a43f-00f9a8a24597,Hornady,0.284,Amax,162
+70a23fec-3339-4324-97e1-f8073aee0148,Hornady,0.308,Amax,155
+575ad9cb-8b31-4f01-9335-5076ba412bd4,Hornady,0.308,Amax,168
+4cc1c1fe-dbc3-4126-ae5e-9e1a02eddfe3,Hornady,0.308,Amax,178
+93463392-a2ee-4920-85ab-31f5213d2dda,Hornady,0.308,Amax,208
+2019811a-da9e-4b15-a4e8-bc5b0f2a75cb,Hornady,0.338,Amax,285
+1cb00150-a4e1-4f42-b13c-27be369ee6b0,Hornady,0.510,Amax,750
+f0d59ba3-c820-4dfa-8a54-397bc6cb1331,Hornady,0.224,BTHP,68
+f2dd1fb3-7ee5-4973-adce-137a5a008939,Hornady,0.224,BTHP,53
+0088e269-5024-4607-b281-26d5ee0a2908,Hornady,0.224,BTHP,75
+2ba3ada8-3af3-418f-873f-70d820d7a638,Hornady,0.243,BTHP,87
+0e257675-b415-488b-b102-eaeb6bd3d181,Hornady,0.308,BTHP,208
+ee269a14-d9ec-4d51-b0c1-79782da9dd29,Hornady,0.338,BTHP,285
+749cd9fa-c23d-475a-a733-e1c2afe5d422,Hornady,0.338,BTHP,250
+ccb35615-5db8-4d83-acb1-e8f87d384027,Hornady,0.224,BTHP Match,52
+ee4dd424-02e5-4b8c-af08-71fa44f1df8a,Hornady,0.224,BTHP Match,68
+65cd1437-eefe-47d3-a2c4-b6d44a901f3d,Hornady,0.224,BTHP Match,75
+9d130a0c-fd9b-45e2-b727-bab48e14a4d7,Hornady,0.243,BTHP Match,105
+51e266d8-d29c-46f2-8616-72c92db69412,Hornady,0.277,BTHP Match,110
+7fee6b83-748e-494c-93f8-01965be3c5a7,Hornady,0.308,BTHP Match,195
+7d5d10f6-9b7c-402a-99cd-fbb53cb39e5e,Hornady,0.284,BTHP Match,162
+1204db14-d675-4796-9814-4a354dfd571a,Hornady,0.224,BTHP Match Canalure,68
+7c00c6fb-bbbb-4e9c-a494-24d443799180,Hornady,0.224,BTHP Match Canalure,75
+0045612a-192c-4e9d-b2ac-a1cefe1061de,Hornady,0.308,BTHP Match pointed,208
+44067709-6ba8-4c9e-adc5-85c4e63e794a,Hornady,0.308,BTHP Match pointed,225
+eb9a220c-6978-418f-bab1-7ccbca3fbb0e,Hornady,0.243,BTHP pointed,105
+81e03b81-7101-48b8-a862-a967c75229e5,Hornady,0.243,BTSP,100
+0da9bc06-614b-446c-86b5-f3df27391717,Hornady,0.308,BTSP,150
+8f2fdee9-d7e0-4895-9c72-567b29ede253,Hornady,0.308,BTSP,190
+376ff6c8-e840-4b38-8238-9d8cc335b94f,Hornady,0.277,BTSP Interlock,140
+058abf34-9d7f-445c-aa19-d3bba5324bdc,Hornady,0.284,BTSP Interlock,139
+c0e087a7-552f-4228-9d73-e8bbea0a2387,Hornady,0.284,BTSP Interlock,162
+d3ecd3a4-f25a-4c8d-8ff2-7edf62f671d0,Hornady,0.308,BTSP Interlock,165
+6eb060b3-a733-4f77-bf5b-73f40f5c2cbb,Hornady,0.224,ELD Match,52
+f9b93cc0-11ff-47c2-a23d-0697a88f4df3,Hornady,0.224,ELD Match,73
+b215211c-3a4a-4376-9b72-de51c5974068,Hornady,0.224,ELD Match,75
+d8ce0fb5-e95b-43f5-bd5f-fbcfacf482fc,Hornady,0.224,ELD Match,80
+0415dd05-e68c-446b-bb2c-2a56a59a37f0,Hornady,0.224,ELD Match,88
+ff07c63f-119e-4656-bd4f-60a920571f17,Hornady,0.243,ELD Match,108
+48ef8e01-100f-4576-9a1c-310a9b370d18,Hornady,0.264,ELD Match,100
+341895c7-e170-40fc-96e5-75063771b906,Hornady,0.264,ELD Match,120
+3c6a7a0c-de2b-4f76-a2ec-9a29083a218b,Hornady,0.264,ELD Match,123
+cb546f93-0a6d-49c6-978e-d9f071e5ee4e,Hornady,0.264,ELD Match,130
+db2bcca9-95b5-4964-95c3-d490b71202e6,Hornady,0.264,ELD Match,140
+6f2e5736-674e-4e32-b3af-ca5e666c95bf,Hornady,0.264,ELD Match,147
+4957235d-9a77-4471-ab4a-2ed2651dfd7a,Hornady,0.284,ELD Match,150
+5b4d748e-0606-4e7c-91a6-d4e8b5a51d9b,Hornady,0.284,ELD Match,162
+e5342c94-9a24-4223-b436-b9fc761b34d4,Hornady,0.284,ELD Match,180
+eaa14e23-43ab-4a85-8523-ccde55cfc037,Hornady,0.308,ELD Match,155
+3c24e855-03ca-43a8-8561-e56bc44e8f69,Hornady,0.308,ELD Match,168
+51e4de48-f318-48aa-a45b-fb596cb8ad43,Hornady,0.308,ELD Match,175
+445f107f-e0e2-426e-b658-c792636be099,Hornady,0.308,ELD Match,195
+361df264-5672-4c66-b559-d7ba6592d81f,Hornady,0.308,ELD Match,208
+ddaaa1ec-fe98-4a78-8c62-bbc88130f76b,Hornady,0.308,ELD Match,225
+7eaf4e6c-ddd3-4d0d-8860-28defda0f7a3,Hornady,0.338,ELD Match,285
+9b353a2c-ddf6-48bb-bd77-8c4f9333ecaa,Hornady,0.243,ELD X,103
+6ef2d13e-bfe9-4349-b0df-99c1715d7393,Hornady,0.264,ELD X,143
+766f8209-7a07-4a3a-83da-87501017b4d0,Hornady,0.277,ELD X,145
+46912a8d-ba4a-479d-ae9c-463e7a600098,Hornady,0.284,ELD X,162
+a9ad720d-780c-4804-9750-f7985dfb0e39,Hornady,0.284,ELD X,175
+7a3c207e-5019-4c04-8139-e213dbd1f474,Hornady,0.308,ELD X,178
+c47ce4e2-2675-4353-96e3-9d307467c8bc,Hornady,0.308,ELD X,200
+28595ac2-3cb7-4366-8c7b-8c2fb8a49815,Hornady,0.308,ELD X,212
+d0ade590-e674-4401-b50a-b2bb95b7dfb5,Hornady,0.308,ELD X,220
+7fbecd04-fe7a-40d1-8883-a80e1dfa14bc,Hornady,0.338,ELD X,230
+46644bd3-2060-4508-a212-0c57bf5e6d99,Hornady,0.338,ELD X,270
+104d8b51-4f53-499f-a219-409973cd1f10,Hornady,0.224,FMJBT,55
+debc1ebb-47ac-4937-9eb1-4a5c66e1654a,Hornady,0.308,FMJBT,150
+6d1c6c5c-5fec-40a4-a2e7-5ec1aeeb0eac,Hornady,0.338,FXT,200
+20e0e723-07e6-4e93-8895-c338300a70a5,Hornady,0.224,GMX,55
+43dd9451-5f0f-48c0-827d-900a622eaedc,Hornady,0.224,GMX,70
+8b5a91b2-5ad6-4e19-a6f7-0e7fe8338217,Hornady,0.243,GMX,80
+8991a2e9-ffde-432b-b415-1be44b82fda5,Hornady,0.257,GMX,90
+1b8b6de9-fd1e-4292-a8a7-e7817cf02fab,Hornady,0.264,GMX,120
+53d7e8b0-4ec9-4bea-9a71-e1e8d389c3fd,Hornady,0.277,GMX,100
+85f27b4c-7722-4063-b9d7-73297e7ca27e,Hornady,0.277,GMX,130
+b6345f8e-9303-445d-a6d8-255413fe1b1f,Hornady,0.284,GMX,139
+b80d03d5-9c2c-4e81-ade4-9ad36233ea49,Hornady,0.308,GMX,110
+d0fc5b34-c8f9-4999-b6ef-a72452fa3f6d,Hornady,0.308,GMX,125
+28414254-b7db-457d-91d3-f34d2209af5c,Hornady,0.308,GMX,165
+8413b9e1-bb28-401e-9045-9bb07b44c027,Hornady,0.308,GMX,180
+d0f378ac-954e-497f-8f7b-df786b20a58a,Hornady,0.338,GMX,185
+90240025-79d5-4664-a9af-bfc731d00d08,Hornady,0.264,HP Match,140
+efa19662-c614-46d4-b4e4-54859ef4f477,Hornady,0.308,HPBT,155
+0d526bbc-67d9-4c1b-9176-2e8303327f59,Hornady,0.308,HPBT,168
+b7c2b0e7-82c0-4f18-8541-87cd18c59c43,Hornady,0.308,HPBT,178
+0b1ef7ad-97d4-4740-8b17-9d1ea6541746,Hornady,0.243,InterBond,85
+b2629b8e-56a0-4cf8-bdd4-c915ffd01216,Hornady,0.257,Interbond,110
+8a044f3e-ebf8-488a-8daa-c300579cf8f5,Hornady,0.264,Interbond,129
+6c7d4799-d4bf-4789-a600-886da0c55649,Hornady,0.277,Interbond,130
+baa323e5-8ef5-4c67-8598-2f7f6ebb2147,Hornady,0.284,Interbond,139
+f4d559f3-5b6b-4128-82bd-d0d6a6927c2d,Hornady,0.284,Interbond,154
+97e2fa53-ba19-47db-9ec4-581e9947706e,Hornady,0.284,Interlock,175
+3d702353-bf04-472b-be71-18fd53164889,Hornady,0.277,SP Interlock,150
+2b5b63b1-8d19-45b3-aa47-508964d2feca,Hornady,0.284,SP Interlock,139
+b629c3c1-8695-4d25-82c7-d00a8b9d10c7,Hornady,0.284,SP Interlock,154
+2d839a5d-e160-4077-a084-7e8a969b541d,Hornady,0.257,Spitzer,87
+4255c9bf-d4c6-4fce-b982-7ea2cf75d21b,Hornady,0.243,SST,95
+cfc16bc4-998c-4bcb-b6d6-7fa534026341,Hornady,0.257,SST,117
+56c432a1-2b48-4c77-8ce2-7955cddafee2,Hornady,0.264,SST,129
+b1b462a3-c229-4b1f-97f0-8e664a35bed1,Hornady,0.277,SST,150
+07c3e5eb-6774-4616-a079-ebbba95fec3d,Hornady,0.284,SST,154
+a21b87ff-63aa-499b-bde0-def89cba5bf9,Hornady,0.308,SST,150
+5d17bdf9-c6bf-4374-a501-8769b927828a,Hornady,0.308,SST,165
+e41bda40-0d96-4a0c-8314-67a92075f1b0,Hornady,0.338,SST,200
+cdff3ff5-fcc0-423a-b6c7-519bc55968b9,Hornady,0.338,SST,225
+ccaeaf71-cca8-4898-959e-2ff856f9211d,Hornady,0.264,SSTBT,123
+dfba03e0-f6f1-4083-beab-3d4372adac5a,Hornady,0.264,SSTBT,140
+ef410fd4-452b-4db3-9900-155f458b3ccb,Hornady,0.277,SSTBT,120
+39c91e5a-a9e6-42ae-ac0a-fcaab361430d,Hornady,0.277,SSTBT,130
+8a9a95d5-cc27-4e3c-9b80-e8ce8bc6b5a2,Hornady,0.277,SSTBT,140
+6c05d62a-14a6-461c-9d29-44f7cf7c6bd9,Hornady,0.284,SSTBT,139
+2fb3d222-bf57-4945-92b0-c7e4517ffe51,Hornady,0.284,SSTBT,154
+f9da56f9-c211-45d8-a3d4-8aebb153f014,Hornady,0.284,SSTBT,162
+4b269759-e2a0-4350-bbae-5311227d22f2,Hornady,0.308,SSTBT,180
+168d5e78-c91c-446a-84fd-3a138b5e852c,Hornady,0.224,Tap,55
+0ba33adf-c037-4deb-bdd5-ce57b3782337,Hornady,0.224,Tap (BTHP),75
+0dcc7b58-8f76-4cbf-a6f0-9fd897006720,Hornady,0.308,Tap,155
+dba52037-49bc-49a2-82f0-230b82751392,Hornady,0.308,Tap (Amax),168
+154ff0c4-d203-4a12-99ce-639b9464228a,Hornady,0.308,Tap (BTHP),168
+6341f303-b86d-429e-b458-fd61697e46f8,Hornady,0.308,Tap (BTHP),175
+1a30593b-38c6-48cd-9f4f-abd510d9f882,Hornady,0.172,Vmax,20
+1d84f498-c7b9-4ada-a7ee-8c6c11888d99,Hornady,0.172,Vmax,25
+6e872149-8c37-4735-9e54-2f2e578e1a06,Hornady,0.204,Vmax,40
+bfcda6b4-17ed-49f9-aed3-3f81b2620fed,Hornady,0.224,Vmax,35
+12340e61-4b44-42e5-ac90-eed8fe41b4ae,Hornady,0.224,Vmax,40
+b6dc9627-4c8c-459e-85df-34c68d072a36,Hornady,0.224,Vmax,50
+598adb55-9ae8-451d-bdb3-76c4012e3630,Hornady,0.224,Vmax,53
+505a2ff6-787e-4924-a55f-3221c2ad0c07,Hornady,0.224,Vmax,55
+b3b4504b-b7ab-4202-9d23-cf3aad537b6a,Hornady,0.224,Vmax,60
+eddb53d2-de11-49af-b1c4-496a565976d5,Hornady,0.243,Vmax,58
+3b4958db-45e8-4c7c-be3a-2756cba7a6d8,Hornady,0.243,Vmax,65
+55b8281f-5f83-473a-bd12-da7a7dcc17e0,Hornady,0.243,Vmax,75
+f01e7593-6e2c-4e6a-9ae2-1b977bc67ef3,Hornady,0.243,Vmax,87
+c5746f52-fd45-4058-8c36-ba2f07228a69,Hornady,0.257,Vmax,75
+1e7bb26a-40ee-474d-99d6-6520424fc632,Hornady,0.264,Vmax,95
+e6b11bec-94ba-4eed-929e-0ae4dd5ca8eb,Hornady,0.277,Vmax,110
+9c93da15-3bdd-4dbf-af01-43efa5e0fc8e,Hornady,0.284,Vmax,120
+9c2a90f9-e7a4-4aee-8757-71af69b7c4f3,Hornady,0.308,Vmax,110
+f2cb6af4-dd95-445c-9e93-90ae9e91f544,HSM,0.408,T50,400
+590a9dd4-7769-4f85-aa23-1a3477fb32f9,JLK,0.284,BTHP,180
+30774d0b-823f-48b6-b466-bde6325ff636,JLK,0.224,VLD,80
+f980fbe9-cec9-41e7-9457-082919524cb4,JLK,0.243,VLD,105
+7ffec13f-c260-4f5a-b78e-72e78c613bd7,JLK,0.264,VLD,140
+fb65f485-d383-4b83-b70a-e11ebd066085,JLK,0.308,VLD,155
+2a8c1bd4-0f31-42c5-b5de-8c29fb81db13,JLK,0.308,VLD,210
+f6140e78-381f-4070-af91-7eb50a53651a,JLK,0.308,VLD LBT,210
+15f147f6-3b45-4802-aea5-f17f14ee785e,KPBallistics,0.308,Jack,200
+a632e489-358a-488d-be80-ecac55b39c6a,LakeCity,0.224,FMJBT,62
+99aed498-1f75-4575-bcaf-df6d5a7249f9,Lapua,0.338,AP,300
+61ef10a2-e0de-4749-a1d5-6cd74ef72a1e,Lapua,0.243,FMJBT,90
+00b8a6cb-6176-41c8-8aa2-6e918913dbf0,Lapua,0.264,FMJBT,144
+3ebaa56b-cf8c-403b-9e1c-485edc31fb61,Lapua,0.308,FMJBT,150
+c369185d-d8a7-4674-9766-394ebd022cf9,Lapua,0.308,FMJBT,170
+94b2feb8-9bea-4228-99bd-a61a215ba377,Lapua,0.308,FMJBT,185
+6343c177-4cbb-4a05-b068-02f580b12dbb,Lapua,0.308,FMJBT,200
+10e1551f-8b35-4a5a-8ff7-9e55803c1dc0,Lapua,0.338,FMJBT,250
+6786e2c9-c3a2-4893-96c1-d3e114f57c5c,Lapua,0.510,Match Solid,800
+e2bc3039-eb6e-4ae0-9e31-ddaaa24325eb,Lapua,0.224,Scenar,69
+610202ab-d42b-40a5-9544-7b2651ece792,Lapua,0.224,Scenar,77
+3502ce48-61df-4f5f-8cec-c634be35b6a4,Lapua,0.243,Scenar,90
+f2ecd02b-f10a-42e2-9de4-f677fd839a33,Lapua,0.243,Scenar,105
+4f72867d-50e1-4199-b6a2-43593b6af78a,Lapua,0.264,Scenar,108
+6ca9c4b7-2781-460b-b12f-93401f93588a,Lapua,0.264,Scenar,123
+a308d14c-bcda-4822-8874-da1ef6247806,Lapua,0.264,Scenar,139
+d3b415b2-b1f4-4593-aed3-0d4c81f25edb,Lapua,0.308,Scenar,155
+29eba6d6-6a46-41ce-89ff-76ad1d41eaf2,Lapua,0.308,Scenar,167
+149c449e-91ae-4a24-8f79-a2d6a146d985,Lapua,0.308,Scenar,185
+63c7f7c4-8fca-43d6-935e-b00bb1ff9326,Lapua,0.338,Scenar,250
+69343c31-a04e-445c-91f4-9dba234c743e,Lapua,0.338,Scenar,300
+1f2eb2b7-9853-4ebf-970b-833956a2f977,Lapua,0.224,ScenarL,69
+f6208238-b7e9-416e-9b52-27a776852781,Lapua,0.224,ScenarL,77
+67e113d8-27cd-41af-81e3-53d395d4960a,Lapua,0.243,ScenarL,90
+86e0bd8f-6045-476d-b63f-7259cf2ab6a0,Lapua,0.243,ScenarL,105
+bd3782f4-00c6-4933-9159-923fb1a7e449,Lapua,0.264,ScenarL,120
+072e4f3d-9062-43f5-9a8c-12e70a797dba,Lapua,0.264,ScenarL,123
+84893bd9-0267-43e4-84b0-60199444d097,Lapua,0.264,ScenarL,136
+ed767a10-cd54-46a0-a142-4f16c16531f3,Lapua,0.264,ScenarL,139
+35e68b09-f041-4cf6-bc9e-e086b22bea42,Lapua,0.284,ScenarL,150
+9927b2e7-c739-46d4-9156-058210c6b9c3,Lapua,0.284,ScenarL,180
+cbbcaa95-cba2-43c0-b38a-8488e80f2e1e,Lapua,0.308,ScenarL,155
+52beef7f-d3c9-41e1-9d41-dfeb0c136834,Lapua,0.308,ScenarL,175
+7248812d-fb58-47bf-a8cb-d60a0fc3a291,Lapua,0.308,ScenarL,220
+6a478e65-886f-437d-a5f7-12e6f0913f1a,Lapua,0.338,ScenarL,250
+0fabc6af-1e56-45d9-8af9-7208efbfd7e4,Lapua,0.338,ScenarL,300
+d7647e77-db6e-48f2-9a89-ac55a7e83f8d,Lehigh,0.338,Brass Solid,230
+01987699-7fb9-48a4-8b01-aa6ed13599ec,Lehigh,0.510,Controlled Chaos,750
+5ab21ad1-743b-4863-ab7d-869c933561c6,Lehigh,0.264,FlashTip,105
+37a8c517-8d9f-4e5d-9b6a-6a7e3f746231,Lehigh,0.264,FlashTip,119
+e8ecede5-5330-4ce2-b65c-be4e807c6efd,Lehigh,0.338,FlashTip,240
+b3206ef3-5db7-4905-8c3b-000fe8470e19,Lehigh,0.338,Match Solid,245
+004c97db-6d66-47b6-80b6-04a1928a12b6,Lehigh,0.375,Match Solid,330
+a24c3147-6708-4ac1-89e4-f32e1fc468de,Lehigh,0.375,Match Solid,353
+c1b6f7ff-7349-49d6-b7b4-fd2f02a55a38,Lehigh,0.408,Match Solid,400
+883f3644-e081-4b0a-ad51-ed97f1316fd0,Lehigh,0.416,Match Solid,416
+5ccd2a9a-06eb-49dd-afc5-5b1733af32fe,Lehigh,0.510,Match Solid,650
+00cb7a77-1516-48b4-963b-aa648c99f0d4,Lehigh,0.510,Match Solid,750
+3ea84060-2b6e-4b97-9912-15cb56d6a944,Lehigh,0.510,Match Solid,808
+fcfbad56-7991-41cf-b4f0-9d04f58e5f07,Matrix,0.264,BTHP,150
+ad802eec-f987-4e49-b563-7ba0ff77607b,Matrix,0.264,BTHP,160
+52fcdd00-e0ae-40e4-b3b8-e4d5f6754ac0,Matrix,0.277,RBT,150
+9a49a860-ef8d-4b64-bb6d-6518d51fef71,Matrix,0.284,RBT,175
+ef0ec4ef-9492-4294-87eb-8f132cfb9aee,Matrix,0.308,RBT,168
+8eb47d74-b924-41f8-9b87-8287c0e70ac1,Matrix,0.243,VLD,107
+4ed299fb-4077-4b93-a0e4-2256004f2192,Matrix,0.284,VLD,168
+95f23d6c-ad0b-47ab-83b9-3b074b0a5bba,Matrix,0.284,VLD,190
+ddcceaf7-8975-48b4-b9ce-65c412d80ea2,Matrix,0.308,VLD,210
+15ccb659-139d-403b-98fb-c48fc65fd058,Military,0.224,M995 AP - AA69,51
+aadaafb2-28e7-4d85-a968-1635f7d78f50,Military,0.224,M855 - AA33,62
+fa850502-5dfc-4515-9430-80143004c04c,Military,0.224,M855 A1 - AB57,62
+632e8269-5605-41c1-961f-640a54a94c89,Military,0.224,MK318 MOD0 - AA49,62
+31834bda-ecdb-4a6b-a8fa-37fd308ea7d7,Military,0.224,MK262 MOD0 - AA53,77
+c296dbd1-9798-454e-9b80-6f4df796e9a1,Military,0.308,MK319 MOD0 - AB50,130
+102c7d9a-9181-4f27-90f3-cb6032bc3d7b,Military,0.308,M80A1 - AZ54,131
+4588d644-dc9d-4f4d-a1b7-cbcf7bfbd86c,Military,0.308,M118LR - AA11,175
+e6ab8b13-de02-44e6-97d8-1ccaa947c4d6,Military,0.308,MK248 MOD0 - A191,190
+8a7971a4-91c6-45cd-9041-58b09a8942c8,Military,0.308,MK248 MOD1 - AB43,220
+12a22915-055d-4be4-baa1-983bef36b0d5,Military,0.308,MK330 MOD0 - AB97,300
+c59ac480-ca28-4743-a4b5-e539737c3cec,Military,0.338,ADIF1 Ball,661
+593aebf5-4c5f-4675-b62b-3f47ce479be9,Military,0.510,M33 - A610,660
+28872515-9dbe-49f1-90f2-f6a8b202e219,Military,0.510,M8 API - A531,663
+3f2b9703-6c54-441e-a6ab-3ee7cfc4664c,Norma,0.264,Diamond,130
+89f567f2-ee5f-4773-adca-670a890ec56a,Norma,0.264,FMJBT,140
+47eb6fe1-3996-49eb-9920-f10c22948774,Norma,0.308,Match,168
+66defc6e-c03c-4b4e-84ea-ed82d1c6eba1,Nosler,0.243,Accubond,90
+56817bce-b795-4906-8c0e-344d58d879d0,Nosler,0.257,Accubond,110
+1bd8427b-8b33-4c48-884f-003cf6a20130,Nosler,0.264,Accubond,130
+f742c7dc-e710-49dd-9b17-7126e78b24f9,Nosler,0.264,Accubond,140
+e28c775c-dde6-46b1-b786-15b075bad78f,Nosler,0.277,Accubond,100
+620cf076-8180-485f-9e91-af73c8edf454,Nosler,0.277,Accubond,130
+00a9a388-d69b-4642-9213-2f94e0afd376,Nosler,0.277,Accubond,140
+c52c38c9-d8b8-449b-9b30-b99b02e87681,Nosler,0.284,Accubond,140
+62ccd5d5-fc6b-4bd8-9aee-7f95a939febb,Nosler,0.284,Accubond,160
+ad47ee60-d264-4a93-b3ff-1c83ed029121,Nosler,0.308,Accubond,125
+ff295a21-d185-485b-bdf6-406274c24824,Nosler,0.308,Accubond,150
+20a28c42-46d8-4194-9ad3-a6562d0fdee1,Nosler,0.308,Accubond,165
+205a44aa-866f-49e7-adf4-321c1b72d29e,Nosler,0.308,Accubond,180
+ab68e831-b151-4900-9eff-b2379e0b4ad7,Nosler,0.308,Accubond,200
+d8a58864-5f25-4932-8b99-c39b9cf41609,Nosler,0.338,Accubond,180
+f5d72b92-f75e-409b-a41f-90ef6f2c36c6,Nosler,0.338,Accubond,200
+3c6455a9-f997-4d8b-8c69-e246e0f1dfca,Nosler,0.338,Accubond,225
+4f22609a-3645-48ad-8969-aebad47eebeb,Nosler,0.338,Accubond,250
+91280c18-abb7-4240-b387-6cc3d5ee5fe1,Nosler,0.375,Accubond,300
+7ea00609-c0c8-4ae9-83a5-09d628f00a8b,Nosler,0.277,Ballistic Silver Tip,130
+bc16d5d9-5f3a-4534-8665-d18576f9bda5,Nosler,0.284,Ballistic Silver Tip,140
+f1cb67d2-789f-474d-a2e4-5b3a9cc48edf,Nosler,0.224,Ballistic Tip,55
+f89f7050-6ea2-4f82-af61-4807b76267b1,Nosler,0.224,Ballistic Tip,60
+c08e12ed-58d1-47b7-8790-b9f576e619df,Nosler,0.243,Ballistic Tip,70
+1e49e74b-8ac6-4419-93e8-263c074d3eeb,Nosler,0.243,Ballistic Tip,80
+7254fdfd-866c-4cee-98f6-389bebac4510,Nosler,0.257,Ballistic Tip,100
+af217e4e-0033-4d80-a2ac-c8947d2af0c1,Nosler,0.257,Ballistic Tip,115
+12b68ec1-a57d-4659-8fdb-b53eb7eebc34,Nosler,0.264,Ballistic Tip,100
+2a379bcc-594d-4fea-a650-ae15d13597ab,Nosler,0.264,Ballistic Tip,120
+5e3a1425-e4ee-45df-bac2-68c1aca44549,Nosler,0.277,Ballistic Tip,140
+0dc5296d-8c48-41ca-ab08-d8785eb5d235,Nosler,0.284,Ballistic Tip,120
+3b4fd96d-47af-4f9f-b28f-394f5c72ef6c,Nosler,0.284,Ballistic Tip,140
+0eb1e058-0be3-4a24-86c0-0177b80119bb,Nosler,0.284,Ballistic Tip,150
+8b16dd5a-986f-4b42-bf13-aed26b7a931d,Nosler,0.308,Ballistic Tip,125
+2a36451c-49b5-4c79-bace-97421b577063,Nosler,0.308,Ballistic Tip,150
+a003ac2f-b2e2-43ef-8fe7-5e2dd46b73ed,Nosler,0.308,Ballistic Tip,165
+40d79599-17ed-44a6-becd-bfe398c19209,Nosler,0.308,Ballistic Tip,168
+dab4baaa-9e05-4ca1-b47c-575f168733be,Nosler,0.308,Ballistic Tip,180
+9534ff48-3179-40ac-96c6-4bede52439f1,Nosler,0.224,Custom Competition,52
+b9d1c2e9-cd80-4edd-a001-bd2bbc558164,Nosler,0.224,Custom Competition,69
+c2431db6-37a4-40e2-a877-c152b921284c,Nosler,0.224,Custom Competition,77
+2138d10d-b335-4473-92a1-815a975de58d,Nosler,0.224,Custom Competition,80
+3ce13f64-3f10-40a6-a104-c913146da4cf,Nosler,0.224,Custom Competition,80
+05cb9064-c9ca-41ab-95e5-3eeb1a5ebfcd,Nosler,0.264,Custom Competition,123
+25a8c13f-786b-41ff-8819-69a80470bab9,Nosler,0.264,Custom Competition,140
+455e7afb-de23-4899-bd19-6769462341dd,Nosler,0.277,Custom Competition,115
+fbd49a04-4ee9-4c9a-aa76-8284126db3f7,Nosler,0.284,Custom Competition,168
+ea709303-4ae1-4eb3-a7cd-9caa862c7a8c,Nosler,0.308,Custom Competition,140
+09605743-9999-4ab7-acdc-4efc2e838204,Nosler,0.308,Custom Competition,155
+58f89857-a2b5-49e7-b036-a919846553bb,Nosler,0.308,Custom Competition,168
+20bf6613-8957-404d-8cde-4123f9e9275e,Nosler,0.308,Custom Competition,175
+04bc4f45-722d-4c8a-9857-82c13a04f073,Nosler,0.308,Custom Competition,190
+04337573-4640-4eab-801d-ca114a51210c,Nosler,0.308,Custom Competition,220
+18fc5fa6-e1e8-452a-8931-a5572ea4dc3a,Nosler,0.338,Custom Competition,300
+5b36521b-6b3c-48f6-8019-0e69f1f6d376,Nosler,0.243,ETip,90
+3babf55d-6b8e-48e9-a357-8b3696bc5a17,Nosler,0.277,ETip,130
+9b4803cd-562c-41c8-95f0-d9fbf20cac0b,Nosler,0.284,ETip,140
+5f61011a-f1ee-48ef-824e-e7f109ea7910,Nosler,0.284,ETip,150
+7ad0cabe-fac0-4eb7-9eca-335bcf49fafd,Nosler,0.308,ETip,150
+86f0f300-897a-49e6-890a-5ef5006c7f91,Nosler,0.308,ETip,168
+aba5f269-b6e1-4c4b-8afb-69427290acf9,Nosler,0.308,ETip,180
+03f93b60-eda9-40d6-bf20-be6a7ccee829,Nosler,0.338,ETip,200
+3d55375f-df5f-4565-aa7b-5d143388b4ba,Nosler,0.264,Long Range Accubond,129
+5197a980-1721-4b20-83fa-1661e963d59b,Nosler,0.264,Long Range Accubond,142
+abd72840-21a4-46ca-b0d9-aff0e194394a,Nosler,0.277,Long Range Accubond,150
+2eb0b908-cf13-49de-9664-bdd0700e60b0,Nosler,0.284,Long Range Accubond,150
+166e7590-1c11-4e30-9514-bb15508c4aa2,Nosler,0.284,Long Range Accubond,168
+835700c1-b9da-41e1-b08b-17009d62f191,Nosler,0.284,Long Range Accubond,175
+7cacd8b5-5425-4b77-8f7c-89ca426565e8,Nosler,0.308,Long Range Accubond,190
+8129ad99-3a74-4b26-a02d-398e28b2c695,Nosler,0.308,Long Range Accubond,210
+9df1ed5d-2b48-427f-aa02-fa059ad65714,Nosler,0.243,Partition,95
+e8593b9f-208e-4266-819b-ec0befbdc237,Nosler,0.257,Partition,115
+938b7aae-e74d-4645-a563-af91f392e166,Nosler,0.284,Partition,150
+829a8ec9-7e91-477b-a781-333542921461,Nosler,0.284,Partition,175
+342fc6ce-13da-45d6-ba48-51e4446d20ac,Nosler,0.308,Partition,165
+f71166bf-453c-4e41-980f-0d570405f243,Nosler,0.308,Partition,180
+d12dee04-f464-4bfc-803e-7747b9142a74,Nosler,0.308,Partition,200
+f2f24c8a-dbe5-46ef-a653-d1d5aff0eaf5,Nosler,0.277,Partition,140
+edfd3b51-7980-4e94-81b3-4ed0438b7c80,Nosler,0.224,RDF,70
+324dedcd-6e43-4663-887d-7a3acf744c54,Nosler,0.243,RDF,105
+862af55a-c299-4459-a8b5-99eeadc3323d,Nosler,0.264,RDF,140
+abe03dbc-5882-49c4-89cf-5b2f717fa782,Nosler,0.284,RDF,185
+ea10311c-3af5-47b6-acd9-eebafdba95d0,Nosler,0.308,RDF,175
+a32f26b7-4268-433e-ae36-9c89ef8c2d95,Peregrine,0.375,SSBT,247
+ed7f265d-29e3-44df-912f-3385b0d4af15,Peregrine,0.375,SSBT,300
+1404f1e3-82bc-4478-a7ef-a4d78a04738c,Peregrine,0.375,SSBT,350
+dc567c02-02b3-4f27-be23-e2e1477b7a75,Peregrine,0.408,SSBT,405
+96a1cab9-3b8a-4959-8976-43fbbdb27848,Peregrine,0.416,SSBT,430
+46bd198e-6696-4d80-8232-61ec0f0aebcf,Peregrine,0.416,SSBT,500
+5439d9bf-7619-4df7-b85b-96ed3c368802,Peregrine,0.510,SSBT,750
+b5886a58-4091-4e2a-9020-fc1488cc51a9,Peregrine,0.510,SSBT,850
+e32b1397-94ca-4b15-ba9c-3670c03606c5,PMC,0.510,FMJBT,660
+57f71282-5f53-41be-b9c5-55c4dab20330,PMC,0.224,FMJBT Green Tip,62
+1a84b078-76f5-438d-ad53-7a2ecf1752fb,PMP,0.308,HPBT,155
+268c11a7-12c3-4373-85b3-151b5f3bb53e,PrecisionBallistics,0.264,BTHP,123
+eebf87be-3a63-4f36-9e79-79eb47c9f612,PrecisionBallistics,0.264,BTHP,130
+82b0ab02-8c5c-4b46-a950-ab03b6d309c1,PrecisionBallistics,0.264,BTHP,136
+f967bba9-790f-433f-81e2-16e0d3dc9415,PrecisionBallistics,0.264,BTHP,139
+6ddda745-607b-4fec-8269-18973b0d47fa,PrecisionBallistics,0.264,BTHP,142
+d5a0ff4c-3ac0-4b38-a033-99cd26f2ed7d,PrecisionBallistics,0.243,VLD,103
+8af4162a-ec0b-485a-aad2-a1c55d6c712b,PrecisionBallistics,0.243,VLD,105
+72feecc2-20a6-4f00-8e1b-59b5de9b8a20,PrecisionBallistics,0.243,VLD,108
+e56d99c4-d2e2-45a3-8e54-bc0f1a8a6b6f,PrecisionBallistics,0.243,VLD,113
+59a1bdbf-21ac-47d0-bf95-60ddc3bd0e5b,PrecisionBallistics,0.243,VLD,115
+804a4109-e4d4-4c9c-bbae-0b8d2dc70f8a,PrviPartizan,0.308,FMJ,150
+b9f2a6e1-d6e6-4bd3-9b5a-8326a74a8774,Raufoss,0.510,MK211,671
+8697e047-a8bb-4701-ae4c-c84913bb7307,Raufoss,0.510,MK211 F3,668
+13a6c272-811b-4180-84e4-d253137d49f6,RockyMountain,0.338,RBT,325
+ae7c3f22-d471-4c92-a330-1b7054e4fbb4,RUAG,0.338,AP,260
+b032adcf-0ef2-4ffb-879a-f68be4b69de2,RUAG,0.338,AP,300
+73e47044-a20b-40a1-b9b1-3ac26b40ee01,RUAG,0.308,DM121 FMJ,200
+0f647e44-960e-411c-9672-7e0275ffbadb,RUAG,0.308,DM131 FMJ,195
+6920f2ea-fd5d-454e-acbd-40544f2f1a69,RUAG,0.308,Swiss Match BTHP,175
+4c23e5c8-b038-4df7-8ec5-df94bf0dc9eb,RUAG,0.338,Swiss P,300
+e241d0db-957f-4453-ae6f-aea1b67abbe3,RUAG,0.338,Swiss P Ball,252
+f55d9814-be7f-4172-986e-f15b7619792d,RUAG,0.308,Swiss P Styx,167
+0c848f08-c046-48f5-9a74-2a2f17c25834,RUAG,0.224,Swiss P Target BTHP,69
+0f8b4b26-b393-466b-8d2d-8b9237b0e197,RUAG,0.308,Swiss P Target BTHP,168
+d3dce40b-15fe-4efc-a7ad-a63835bba563,RUAG,0.308,Swiss P Target BTHP,180
+0650be43-ac57-4f00-bbb8-fcf6e4613161,RUAG,0.308,Swiss P Target BTHP,190
+6681efb6-f490-4134-9bcd-8e1b4c14d789,RUAG,0.308,Swiss P Target BTHP,200
+25150873-bdcb-4b7c-9039-6f452202dc3c,RUAG,0.308,Swiss P Target BTHP,220
+ca0efb59-17d0-4702-b860-84fd18ab2aeb,RUAG,0.338,Swiss P Target BTHP,250
+b8663678-18f0-4d6d-8988-3e9ee3d8d7d7,Sako,0.308,Subsonic,170
+660c42f2-d3cf-4060-b7b1-921e8d58829f,Sierra,0.224,BlitzKing,55
+f367a7a3-d047-4f5e-bfb7-1ce8bbef91c1,Sierra,0.243,BlitzKing,80
+1e7c4b27-4f52-48fb-ad7f-97d2eea30e8e,Sierra,0.257,BlitzKing,70
+d143e2a8-1f9e-4c5b-95a7-db23dcc233f6,Sierra,0.308,FBHP Varminter,110
+d423c850-4f93-4a90-85b7-06a0a0f4644a,Sierra,0.224,FMJ,55
+98056005-0e56-4f5f-9604-55a2c2042f47,Sierra,0.308,FMJBT,150
+88fc646e-b762-491e-b650-5d12990911f4,Sierra,0.308,FMJBT,173
+dc394dc5-0998-48df-b0a8-40e9fe4f9f07,Sierra,0.243,GameChanger,90
+5c038c6b-06ff-4665-ac3a-d2125f38085f,Sierra,0.264,GameChanger,130
+c44a335a-e9bd-41cd-99a7-2ebea215c54c,Sierra,0.277,GameChanger,140
+cbec56c3-0159-40a0-a26d-69cb78ecb106,Sierra,0.284,GameChanger,165
+3581e538-01d1-4362-9e49-776a15d92682,Sierra,0.308,GameChanger,165
+965579d8-5da3-4600-b0e1-4c11f3da02cb,Sierra,0.224,GameKing,65
+a52c5fb1-fd47-4e78-a7c9-ed8f0123ec8c,Sierra,0.277,GameKing,140
+a0253af4-1c7f-4cb1-9742-68297ba12684,Sierra,0.277,GameKing,150
+2ae100ff-6a96-4208-8f1a-21172ae72ef5,Sierra,0.284,GameKing,140
+4ad91dc3-90cb-47df-9175-f96eec586c99,Sierra,0.284,GameKing,150
+1ad0434b-89b1-4544-995d-5ff6ee90f7ee,Sierra,0.284,GameKing,175
+41891788-979f-47b5-95d7-03b39f2488db,Sierra,0.308,GameKing,165
+d2fb349a-315f-4280-84a8-dbb6bc22e0a9,Sierra,0.308,GameKing,180
+fabf44d9-3da8-416c-a9a5-406a5638c3e5,Sierra,0.308,GameKing,200
+d3b0f34a-376e-461d-8ac1-8015a69b877b,Sierra,0.338,GameKing,250
+d3cf4324-34b2-4b7b-b650-368dd394bd9a,Sierra,0.375,GameKing,300
+551e0514-b4ba-486e-bcf7-037cb8e755bf,Sierra,0.284,HPBT GameKing,140
+fa7c459e-f298-430b-b586-f7e6d2e34cd5,Sierra,0.284,HPBT GameKing,160
+53371be8-9a46-4fc2-a88e-9766f94294f8,Sierra,0.308,HPBT GameKing,165
+bb216670-0c9a-4cc0-a05b-61e4b9ff77d4,Sierra,0.224,MatchKing,52
+3df13085-7380-4fa5-90b7-3b9cfb247b9b,Sierra,0.224,MatchKing,53
+624a3573-2cf7-4437-8cfd-6a54acaafb21,Sierra,0.224,MatchKing,69
+7ffca2b6-52fa-4d1d-b22e-a79174ba028d,Sierra,0.224,MatchKing,77
+609aa0b4-a596-4c2b-b034-1d4ae3138590,Sierra,0.224,MatchKing,80
+e76f0405-ba89-4d7d-81e2-033785f03d86,Sierra,0.224,MatchKing,90
+1841eae2-2601-4d54-a5ef-6776b9d15b6a,Sierra,0.243,MatchKing,70
+77a5eeb7-e576-4935-bed2-9a08cae76266,Sierra,0.243,MatchKing,95
+13e349e3-9b02-4255-9452-e9bf23d9c233,Sierra,0.243,MatchKing,107
+e1eee61f-e647-4af1-b24e-bd623c3dc959,Sierra,0.257,MatchKing,100
+63dc0da8-a79d-4cb1-9cad-41369cd4ff26,Sierra,0.264,MatchKing,107
+e75bc0ad-1e20-4ec7-b925-310c9fe91be1,Sierra,0.264,MatchKing,120
+c468a660-2e78-4efa-838d-5d73e6922088,Sierra,0.264,MatchKing,123
+aa04c372-130f-47b1-82ba-360515145416,Sierra,0.264,MatchKing,140
+2005695c-da53-4f03-811b-5067dcf7314c,Sierra,0.264,MatchKing,142
+d49c90fd-6800-4fa8-a4c9-93b2bb30bc32,Sierra,0.264,MatchKing,150
+9e5b182e-c787-4184-88c4-9970992b7137,Sierra,0.277,MatchKing,115
+46e044a4-638b-4a64-a89c-c54eb9a05fcf,Sierra,0.277,MatchKing,135
+4d186947-a2c1-4c81-92aa-f490aeb884e4,Sierra,0.284,MatchKing,130
+e1f6affd-b35f-484f-9c12-80fe46f2b9e7,Sierra,0.284,MatchKing,150
+636e9fee-6a6b-4dc2-bca7-90597863da66,Sierra,0.284,MatchKing,168
+beeecf52-dc9b-49e5-9782-bdf721b2709d,Sierra,0.284,MatchKing,175
+92c0806c-62e9-4b9f-a5a3-ff2da474e4f0,Sierra,0.284,MatchKing,180
+127c76b0-199c-4375-93ef-6d76bc9ae292,Sierra,0.308,MatchKing,125
+956d21b4-e065-407c-a13a-4c14d2d84d51,Sierra,0.308,MatchKing,135
+24970c36-ccff-48a3-998d-cef75607e9b5,Sierra,0.308,MatchKing,150
+82fdb3a6-9e13-4942-8ad9-c918f1057f2b,Sierra,0.308,MatchKing,168
+21b89052-49d2-4217-96fc-97ce32487feb,Sierra,0.308,MatchKing,175
+24eb74cb-f2b9-41ce-9036-bc2fd5cdbaa5,Sierra,0.308,MatchKing,180
+9edf60de-27c1-4b85-a1e4-2db459a31d68,Sierra,0.308,MatchKing,190
+aeeedb66-4ff9-4e4a-8788-e3d579ed4c48,Sierra,0.308,MatchKing 2230,200
+074299a1-beda-4113-aa62-02445380291f,Sierra,0.308,MatchKing 2231,200
+fe9a4991-031b-4da9-b327-57289a8123fd,Sierra,0.308,MatchKing,210
+a4e69665-e840-4f89-a03e-4ac86a8e9711,Sierra,0.308,MatchKing,240
+20d5a548-ddad-432c-b773-29e356200063,Sierra,0.338,MatchKing,250
+9b262856-11a7-4590-b572-d1f1a1d86386,Sierra,0.338,MatchKing,300
+a52ce20a-150a-4104-ba88-071b0e7d7eed,Sierra,0.375,MatchKing,350
+626fbe6c-ce00-4c73-9f9e-f2d6ad2a3ca3,Sierra,0.308,MatchKing,220
+40d0c40a-84d1-4ce2-97cc-672f834f4948,Sierra,0.308,MatchKing PALMA 2155,155
+46f75493-9086-4409-abfe-13fee1625904,Sierra,0.308,MatchKing PALMA 2156,155
+6a4448ae-511a-41ec-a636-227c0b7c77da,Sierra,0.224,MatchKing pointed,80
+cb895772-3137-4a03-8b6e-ac0dd4d92235,Sierra,0.224,MatchKing pointed,90
+ddd15152-bac7-4176-8c4a-e5672633abbe,Sierra,0.243,MatchKing pointed,95
+2dfbd2d9-ca00-4773-8e4b-71cac12b8cbc,Sierra,0.243,MatchKing Pointed,107
+136617ae-ac91-43b1-87a4-145b4a97eab9,Sierra,0.243,MatchKing pointed,110
+b70fa753-dbac-4954-9f63-f8b5cefe4280,Sierra,0.264,MatchKing Pointed,123
+8c88da1c-426c-46cd-8aa9-40f120c38090,Sierra,0.264,MatchKing Pointed,142
+f77daba6-c8a8-4544-861e-2e64457f1368,Sierra,0.284,MatchKing Pointed,183
+7845ff0d-0992-40af-b1e6-9745f3f6bc5d,Sierra,0.284,MatchKing pointed,197
+f8637c3a-0517-450c-91f9-bc5cd2028797,Sierra,0.308,MatchKing Pointed,125
+4771a109-902d-42e6-a9a8-3afdda9deaa2,Sierra,0.308,MatchKing pointed,230
+f9f924ae-fbee-4847-b1ae-d4c95da23638,Sierra,0.243,Pro Hunter,100
+7b03449f-a833-418c-96e8-ff8165c6561f,Sierra,0.257,Pro Hunter,117
+54c01117-631c-4200-aa9b-fea09d7a27af,Sierra,0.264,ProHunter,120
+e3b1afc5-bc37-47c5-a12f-65b527aa364c,Sierra,0.264,SBT,140
+a9306ce6-c23a-4298-bc27-b6b9cc62995a,Sierra,0.308,SP GameKing,150
+bf0c9e3e-c336-4f94-aa7b-2c3f7de0d2eb,Sierra,0.308,SP GameKing,165
+a6e217ee-e975-47f3-aef0-bde4c7291d8c,Sierra,0.338,SP GameKing,250
+de265edb-87c9-4b62-b5b8-09cf2c765c3d,Sierra,0.224,Tipped MatchKing,69
+30e15e32-bc9e-4dd5-b2f0-225f81449be5,Sierra,0.224,Tipped MatchKing,77
+6484148b-401f-4b64-a094-a7af5408064d,Sierra,0.243,Tipped MatchKing,95
+b476b8d4-1bc1-4edb-9c72-bddbfb8cd8d4,Sierra,0.264,Tipped MatchKing,130
+ea278173-615b-4c3e-bc9f-7142a05466ab,Sierra,0.284,Tipped MatchKing,160
+8a97a6bd-8b52-410c-9bee-07853bfc26b8,Sierra,0.308,Tipped MatchKing,125
+9f3c0aad-c073-4962-b474-0b9bcb2c8ef9,Sierra,0.308,Tipped MatchKing,155
+dec1c337-4967-49ec-a135-c9cc871b7726,Sierra,0.308,Tipped MatchKing,168
+8a6c6448-414e-4bbd-bc57-e6cb5532fdfa,Sierra,0.308,Tipped MatchKing,175
+9ee38565-645e-4f00-8f80-0f63c02fe0c6,Sierra,0.308,Tipped MatchKing,195
+9e44bdee-4bc6-42cd-91f6-02664346244a,Sierra,0.308,Varminter,135
+27944e3c-4b91-4280-ac33-86ce606ebce9,Sig Sauer,0.224,Varmint,40
+9b2fb450-2223-40c3-9aab-87574d092dca,Sig Sauer,0.224,FMJ,55
+9ed32ee7-a47f-4eb8-83d5-99f847e126a0,Sig Sauer,0.224,Elite,60
+9ca8256d-bfbf-40b2-8e76-f52a12ac9785,Sig Sauer,0.224,OTM,77
+d0791cc5-0b9c-4e20-85fa-72ec7831fa51,Sig Sauer,0.243,Varmint,55
+0157569f-1632-4da8-bf74-f7e401dcea3b,Sig Sauer,0.264,Elite,120
+251f0ef6-5451-45a3-bc45-8f6fc2284e2a,Sig Sauer,0.264,OTM,140
+0215f374-a904-4877-8f2d-15ab23f196aa,Sig Sauer,0.308,Elite,120
+361aafa0-59af-41f2-8584-b0a7a5d2a89d,Sig Sauer,0.308,Elite,150
+6e046e59-1435-4f5b-850a-c0489c94ca95,Sig Sauer,0.308,Elite,165
+aa943c37-bdcd-4e8d-a40f-574df05463cb,Sig Sauer,0.308,OTM,168
+68b5d5bd-3a24-45f9-8c99-c0dbee4aab61,Sig Sauer,0.308,OTM,175
+f9437404-84ac-48e5-9e2d-7e99c90f8a58,Sig Sauer,0.308,OTM,190
+a74376ca-a547-4d17-a1f4-30f9b849b176,SniperExtreme,0.408,APFI,400
+03f70a01-b916-4527-85b7-f10abd5b914f,SniperExtreme,0.408,API,400
+e3c200fe-8191-4fb0-b19c-6c9ec00f33ae,SniperExtreme,0.408,EBB,400
+bcc8d489-ecc8-40c7-a4d1-f697f4cc9d92,SniperExtreme,0.510,EBB,700
+95ae9588-fc9b-497f-b9ea-2dfb729fe387,Speer,0.224,Gold Dot,55
+af9eb005-98da-4d00-b14c-ad3800b6cdce,Speer,0.224,Gold Dot,75
+d7d33a3b-7412-4636-8655-50c833da643b,Speer,0.308,Gold Dot,168
+5a22c3fd-91d0-4ee8-af45-e74ae9971eab,Swift,0.277,AFrame,140
+546dacf5-ed69-4575-a269-69fc583d99a8,Swift,0.277,AFrame,150
+8818ad66-3aa0-4973-95de-9fd118d42bb5,Swift,0.308,BT Spitzer,150
+b26ff810-e9b6-47e0-8e3c-35b357f432d1,Swift,0.308,BT Spitzer,165
+4c38233d-e8e1-4fa2-a176-704f206f90a6,Swift,0.308,BT Spitzer,180
+5b622762-b5c6-4c8b-ba90-a9d84875adab,Swift,0.284,BTSP,150
+ce3875a8-0c1f-482f-b880-d47dcfc93aef,Swift,0.257,Scirocco,100
+24975ec0-b833-492b-bf11-2bfd626fda44,Swift,0.264,Scirocco,130
+e3064d60-f4c1-42d5-b415-dc0531ee145f,Thunder Ammo,0.510,Brass Solid,802
+c2697fb7-709d-4eec-a971-d9205978a7fe,Trom,0.224,Nato,53
+3e5482f3-0b58-4781-913e-c03071e6ae35,Trom,0.308,Flatline,111
+a1665010-f673-427d-882b-a08094be58e8,Trom,0.308,900m,132
+451a35b9-269c-48f5-89db-e18ff2cf6187,Trom,0.308,1100m,135
+83fa5f77-e3f8-4b99-82a4-343816e51b9a,VaporTrail,0.243,BTHP,103
+5d22fe6d-456b-4e8f-ad2a-a6ba01e0ae55,VaporTrail,0.264,BTHP,137
+7a2b4f81-07c7-426b-9c27-9a66d23d05e8,VaporTrail,0.308,BTHP,180
+2c6a0e96-ab83-46f6-8b2e-0715cf6bf70e,VaporTrail,0.308,BTHP,207
+e09a27d8-798a-45f8-a46a-4ba46ec2bbb1,Warner,0.284,Flatline,151
+7df74e99-78c0-48a5-baab-52091ec26071,Warner,0.308,Flatline,155
+b73da43d-cc60-4fff-9eee-f9dc4ecf9727,Warner,0.308,Flatline,180
+12d4e61c-a948-4d12-85a6-4d5f04a0e717,Warner,0.308,Flatline,198
+bce523d0-46a5-45bd-8fe8-f41102f5ff3a,Warner,0.308,Flatline,200
+1a9fb494-a103-43b1-974b-20a2b8b5df37,Warner,0.338,Flatline,256
+f3cd8f64-9bd4-47e7-b4db-3f215e520e96,Wildcat,0.284,ULD,200

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns:local="clr-namespace:LoadDevelopmentUI"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d" x:Class="LoadDevelopmentUI.MainPage"
+            Title="Load Development">
+
+    <NavigationPage Title="Develop Loads">
+        <x:Arguments>
+            <local:DevelopPage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Test Loads">
+        <x:Arguments>
+            <local:TestPage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Use Loads">
+        <x:Arguments>
+            <local:UsePage/>
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="LoadDevelopmentUI.TestLoadString"
+              Title="Fire Shot String" 
+			 Padding="3,10,3,3"
+             BackgroundColor="LightGray">
+    <ContentPage.Content>
+        <ScrollView>
+			<StackLayout>
+                <ListView ItemsSource="{Binding LoadStringShots}"
+                          x:Name="ShotStringListView">
+
+                    <ListView.Header>
+                        <Grid Padding="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition Width="45"/>
+                                <ColumnDefinition Width="28"/>
+                                <ColumnDefinition Width="45"/>
+                                <ColumnDefinition Width="35"/>
+                                <ColumnDefinition Width="45"/>
+                            </Grid.ColumnDefinitions>
+                        <Label Text="Avg"
+                               FontSize="Default"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Start"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+                        <Label Text="{Binding Avg}"
+                               FontSize="Default"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Start"
+                               Grid.Row="0"
+                               Grid.Column="1"/>
+                        <Label Text="Min"
+                               FontSize="Default"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Start"
+                               Grid.Row="0"
+                               Grid.Column="2"/>
+                        <Label Text="{Binding Min}"
+                               FontSize="Default"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Start"
+                               Grid.Row="0"
+                               VerticalTextAlignment="Center"
+                               Grid.Column="3"/>
+                        <Label Text="Max"
+                               FontSize="Default"
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"
+                               Grid.Row="0"
+                               Grid.Column="4"/>
+                        <Label Text="{Binding Max}"
+                               FontSize="Default"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"
+                               Grid.Row="0"
+                               Grid.Column="5"/>
+                        <Label Text="SD"
+                               FontSize="Default"
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"
+                               Grid.Row="1"
+                               Grid.Column="0"/>
+                        <Label Text="{Binding Sd, StringFormat='{0:F1}'}"
+                               HorizontalTextAlignment="Start"
+                               FontSize="Default"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               Grid.Row="1"
+                               Grid.Column="1"/>
+                        <Label Text="ES"
+                               HorizontalTextAlignment="Start"
+                               FontSize="Default"
+                               VerticalTextAlignment="Center"
+                               Grid.Row="1"
+                               Grid.Column="2"/>
+                        <Label Text="{Binding Es}"
+                               HorizontalTextAlignment="Start"
+                               FontSize="Default"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               Grid.Row="1"
+                               Grid.Column="3"/>
+						<Label Text="{Binding PowderCharge, StringFormat='{0:F1} gr'}"
+											HorizontalOptions="Start"
+											Grid.Column="0"
+											Grid.Row="2"
+											Grid.ColumnSpan="2"
+											VerticalOptions="Center"/>
+                        <Label Text="{Binding Coal, StringFormat='{0:F3} COAL'}"
+											HorizontalOptions="Start"
+											Grid.Column="2"
+											Grid.ColumnSpan="3"
+											Grid.Row="2"
+											VerticalOptions="Center"/>
+						</Grid>
+					</ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="65"/>
+                                        <ColumnDefinition Width="140"/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="20"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="Velocity" 
+											HorizontalOptions="Start" 
+											VerticalOptions="Center"
+											Grid.Row="0"
+											Grid.Column="0"></Label>
+                                    <Entry Text="{Binding VelocityStr}" 
+                                           Keyboard="Numeric"
+                                           Placeholder="Enter velocity"
+											HorizontalOptions="StartAndExpand"
+											VerticalOptions="Center"
+                                            WidthRequest="140"
+                                            Unfocused="VelocityEntry_Unfocused"
+											Grid.Row="0"
+											Grid.Column="1"/>
+									
+                                    <Label Text="Flier/Crono Error"
+                                           FontSize="Small"
+                                           VerticalOptions="Center"
+                                           WidthRequest="100"
+                                           HorizontalOptions="Start"
+                                           Grid.Column="4"/>
+                                    <CheckBox Grid.Row="0"
+                                              WidthRequest="20"
+                                              IsChecked="{Binding IsError}"
+                                              CheckedChanged="CheckBox_CheckedChanged"
+                                              VerticalOptions="Center"
+                                              HorizontalOptions="Start"
+                                              Grid.Column="5"/>
+								</Grid>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+			</StackLayout>
+		</ScrollView>
+    </ContentPage.Content>
+</ContentPage>

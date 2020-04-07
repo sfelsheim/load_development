@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
+             Padding="3,10,3,3"
+	        x:Class="LoadDevelopmentUI.TestPlot">
+    <ContentPage.Content>
+       <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition></RowDefinition>
+	        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+	        </Grid.ColumnDefinitions>
+            <oxy:PlotView Model="{Binding Model}"
+                          Grid.Row="2"
+                          Grid.ColumnSpan="2"
+                          Grid.Column="0"
+                          AbsoluteLayout.LayoutBounds="20,0,.9,.9"
+                          AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional"/>
+            <Label Text="Include All Shots"
+		        Grid.Row="0"
+		        Grid.Column="0"
+                   VerticalOptions="Center"
+		    HeightRequest="30"/>
+
+            <CheckBox IsChecked="False"
+                      Grid.Row="0"
+                      Grid.Column="1"
+                      HorizontalOptions="End"
+                      CheckedChanged="AllShots_CheckBox_CheckedChanged"
+                      VerticalOptions="Center"/>
+
+            <Label Text="Show Gridlines"
+                   Grid.Row="1"
+                   VerticalOptions="Center"
+                   Grid.Column="0"/>
+
+            <CheckBox IsChecked="False"
+                      Grid.Row="1"
+                      HorizontalOptions="End"
+                      CheckedChanged="Gridlines_CheckBox_CheckedChanged"
+                      VerticalOptions="Center"
+                      Grid.Column="1"/>
+        </Grid>
+           </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoadDevelopmentUI.TestLayoutPage" BackgroundColor="LightGray">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0"
+                       Text="Test Load"/>
+                <Label Grid.Row="1"
+                       Text="F-Class Rifle (6.5 Creedmoor)"/>
+                <Label Grid.Row="2"
+                       Text="140gr Hornady ELD Match @ 2.800 COAL"/>
+                <Label Grid.Row="3"
+                       Text="5 Powder Variations, starting at 45.0gr"/>
+                <Label Grid.Row="4"
+                       Text="Hodgdon H4350"/>
+               
+            </Grid>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

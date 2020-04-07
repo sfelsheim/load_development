@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoadDevelopmentUI.NewLoadPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             Title="Create New Load" Padding="3,10,3,3"
+             BackgroundColor="LightGray">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <!-- Load Name -->
+                <StackLayout BackgroundColor="White" Padding="5">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Name"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+
+                        <Entry Placeholder="Name Your New Load"
+                               x:Name="loadNameEntry"
+                               Completed="OnLoadNameCompleted"
+                               HorizontalOptions="StartAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Text="{Binding LoadName}"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               Grid.ColumnSpan="2"/>
+                    </Grid>
+
+                </StackLayout>
+
+                <!-- Rifle -->
+                <StackLayout BackgroundColor="White" Padding="5">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Rifle"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+
+                        <Picker Title="Select Rifle"
+                                IsEnabled="False"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                x:Name="riflePicker"
+                                SelectedIndexChanged="OnRifleSelectionChanged"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="CenterAndExpand"
+                                ItemsSource="{Binding Rifles}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedRifle}"
+                                Grid.Row="0"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newRifleButton"
+                                Clicked="OnNewRifleButtonClicked"
+                                IsEnabled="False"
+                                HorizontalOptions="End"
+                                Grid.Row="0"
+                                Grid.Column="2"/>
+                    </Grid>
+                </StackLayout>
+
+                <!-- Powder -->
+                <StackLayout BackgroundColor="White" Padding="5">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Powder"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+
+                        <Picker Title="Select Powder Manufacturer"
+                                IsEnabled="False"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                x:Name="powderManfPicker"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                ItemsSource="{Binding PowderManf}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedPowderManf}"
+                                SelectedIndexChanged="OnPowderManfSelectionChanged"
+                                Grid.Row="0"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newPowderManfButton"
+                                Clicked="OnNewPowderManfButtonClicked"
+                                IsEnabled="False"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="End"
+                                Grid.Row="0"
+                                Grid.Column="2"/>
+
+                        <Picker Title="Select Powder"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                x:Name="powderPicker"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                ItemsSource="{Binding PowderModel}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedPowderModel}"
+                                SelectedIndexChanged="OnPowderModelSelected"
+                                IsEnabled="False"
+                                Grid.Row="1"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newPowderButton"
+                                Clicked="OnNewPowderButtonClicked"
+                                IsEnabled="False"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="End"
+                                Grid.Row="1"
+                                Grid.Column="2"/>
+
+                    </Grid>
+                </StackLayout>
+
+                <!-- Bullet -->
+                <StackLayout BackgroundColor="White" Padding="5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Bullet"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+
+                        <Picker Title="Select Bullet Manufacturer"
+                                IsEnabled="False"
+                                x:Name="bulletManfPicker"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                ItemsSource="{Binding BulletManf}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedBulletManf}"
+                                SelectedIndexChanged="OnBulletManfSelectionChanged"
+                                Grid.Row="0"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newBulletManfButton"
+                                Clicked="OnNewBulletManfButtonClicked"
+                                IsEnabled="False"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="EndAndExpand"
+                                Grid.Row="0"
+                                Grid.Column="2"/>
+
+                        <Picker Title="Select Bullet"
+                                IsEnabled="False"
+                                x:Name="bulletPicker"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                ItemsSource="{Binding BulletModel}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedBullet}"
+                                SelectedIndexChanged="OnBulletSelectionChanged"
+                                Grid.Row="1"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newBulletButton"
+                                Clicked="OnNewBulletButtonClicked"
+                                IsEnabled="False"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="EndAndExpand"
+                                Grid.Row="1"
+                                Grid.Column="2"/>
+
+                        <Picker Title="Select Bullet Weight"
+                                IsEnabled="False"
+                                x:Name="bulletWeightPicker"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                ItemsSource="{Binding BulletWeights}"
+                                ItemDisplayBinding="{Binding Weight}"
+                                SelectedItem="{Binding SelectedBulletWeight}"
+                                VerticalOptions="CenterAndExpand"
+                                SelectedIndexChanged="OnBulletWeightSelected"
+                                HorizontalOptions="StartAndExpand"
+                                Grid.Row="2"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newBulletWeightButton"
+                                Clicked="OnNewBulletWeightButtonClicked"
+                                IsEnabled="False"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="EndAndExpand"
+                                Grid.Row="2"
+                                Grid.Column="2"/>
+                    </Grid>
+                </StackLayout>
+
+                <!-- Primer -->
+                <StackLayout BackgroundColor="White" Padding="5">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Primer"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+
+                        <Picker Title="Select Primer Manufacturer"
+                                IsEnabled="False"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                ItemsSource="{Binding PrimerManufacturer}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedPrimerManf}"
+                                x:Name="primerManfPicker"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                SelectedIndexChanged="OnPrimerManfSelectionChanged"
+                                Grid.Row="0"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newPrimerManfButton"
+                                IsEnabled="False"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="End"
+                                Grid.Row="0"
+                                Grid.Column="2"/>
+
+                        <Picker Title="Select Primer"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                x:Name="primerPicker"
+                                ItemsSource="{Binding PrimerModel}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedPrimerModel}"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                IsEnabled="False"
+                                Grid.Row="1"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newPrimerButton"
+                                IsEnabled="False"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="End"
+                                Grid.Row="1"
+                                Grid.Column="2"/>
+
+                    </Grid>
+                </StackLayout>
+                <!-- Case -->
+                <StackLayout BackgroundColor="White" Padding="5">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="88"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Case"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+
+                        <Picker Title="Select Case Manufacturer"
+                                IsEnabled="False"
+                                ios:Picker.UpdateMode="WhenFinished"
+                                x:Name="caseManfPicker"
+                                ItemsSource="{Binding CaseManufacturer}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedBrass}"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                Grid.Row="0"
+                                Grid.Column="1"/>
+
+                        <Button Text="New"
+                                x:Name="newCaseManfButton"
+                                IsEnabled="False"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="End"
+                                Grid.Row="0"
+                                Grid.Column="2"/>
+
+                        <Label Text="OAL"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="1"
+                               Grid.Column="0"/>
+
+                        <Entry Placeholder="Enter Case OAL (optional)"
+                            ios:Picker.UpdateMode="WhenFinished"
+                            x:Name="caseOalEntry"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="StartAndExpand"
+                            IsEnabled="False"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"/>
+
+                        <Label Text="Headspace"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="2"
+                               Grid.Column="0"/>
+
+                        <Entry Placeholder="Enter Case Headspace (optional)"
+                            ios:Picker.UpdateMode="WhenFinished"
+                            x:Name="caseHeadspaceEntry"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="StartAndExpand"
+                            IsEnabled="False"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Load Variation -->
+                <StackLayout BackgroundColor="White" Padding="5">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Vary Load by Powder Charge"
+                               HorizontalOptions="Start"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+
+                        <Switch HorizontalOptions="EndAndExpand"
+                                Toggled="PowderChargeSwitchToggled"
+                                x:Name="powderChargeSwitch"
+                                IsToggled="{Binding SelectedIsVaryByPowderCharge}"
+                                Grid.Row="0"
+                                Grid.Column="1"/>
+
+                        <Label Text="Vary Load by COAL"
+                               HorizontalOptions="Start"
+                               Grid.Row="1"
+                               Grid.Column="0"/>
+
+                        <Switch IsToggled="{Binding SelectedIsVaryByCoal}"
+                                HorizontalOptions="EndAndExpand"
+                                Toggled="CoalSwitchToggled"
+                                x:Name="coalSwitch"
+                                Grid.Row="1"
+                                Grid.Column="1"/>
+                    </Grid>
+                </StackLayout>
+
+                <!-- Variation criteria -->
+                <StackLayout BackgroundColor="White" Padding="5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="260"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Powder Variations"
+                               x:Name="variaionLabel"
+                                HorizontalOptions="Start"
+                                Grid.Row="0"
+                                Grid.Column="0"/>
+
+                        <Entry x:Name="numVariationsEntry"
+                               IsEnabled="False"
+                                Placeholder="Enter the Number of Variations"
+                                HorizontalOptions="StartAndExpand"
+                                Keyboard="Numeric"
+                               Unfocused="OnVariationUnFocused"
+                                Text="{Binding SelectedVariations}"
+                                Grid.Row="0"
+                                Grid.Column="1"/>
+
+                        <Label Text="Shots per Variation"
+                                HorizontalOptions="Start"
+                                Grid.Row="1"
+                                Grid.Column="0"/>
+
+                        <Entry x:Name="shotsPerVariationEntry"
+                               IsEnabled="False"
+                                Placeholder="Enter Shots per Variation"
+                               Unfocused="OnVariationUnFocused"
+                                HorizontalOptions="StartAndExpand"
+                                Keyboard="Numeric"
+                                Text="{Binding SelectedShotsPerVariation}"
+                                Grid.Row="1"
+                                Grid.Column="1"/>
+
+                        <Label Text="Powder Variation amount"
+                               x:Name="variationAmountLabel"
+                               Unfocused="OnVariationUnFocused"
+                               HorizontalOptions="Start"
+                               Grid.Row="2"
+                               Grid.Column="0"/>
+
+                        <Entry x:Name="variationAmountEntry"
+                               IsEnabled="False"
+                               Unfocused="OnVariationUnFocused"
+                                Placeholder="Enter Variation Amount"
+                                HorizontalOptions="StartAndExpand"
+                               Text="{Binding SelectedVariationAmount}"
+                                Keyboard="Numeric"
+                                Grid.Row="2"
+                                Grid.Column="1"/>
+
+                        <Label Text="Starting Powder Charge"
+                               x:Name="startingLabel"
+                                HorizontalOptions="Start"
+                                Grid.Row="3"
+                                Grid.Column="0"/>
+
+                        <Entry x:Name="startingEntry"
+                               IsEnabled="False"
+                                Placeholder="grains"
+                                HorizontalOptions="StartAndExpand"
+                               Unfocused="OnVariationUnFocused"
+                                Keyboard="Numeric"
+                               Text="{Binding SelectedStarting}"
+                                Grid.Row="3"
+                                Grid.Column="1"/>
+
+                        <Label x:Name="powderChargeLabel"
+                               HorizontalOptions="Start"
+                               TextColor="LightGray"
+                               Text="Powder Charge"
+                               Grid.Row="4"
+                               Grid.Column="0"/>
+
+                        <Entry x:Name="powderChargeEntry"
+                               HorizontalOptions="StartAndExpand"
+                               IsEnabled="False"
+                               Placeholder="grains"
+                               Unfocused="OnVariationUnFocused"
+                               Keyboard="Numeric"
+                               Text="{Binding SelectedPowderCharge}"
+                               Grid.Row="4"
+                               Grid.Column="1"/>
+
+                        <Label Text="COAL"
+                               x:Name="coalLabel"
+                                HorizontalOptions="Start"
+                                Grid.Row="5"
+                                Grid.Column="0"/>
+
+                        <Entry x:Name="coalEntry"
+                               IsEnabled="False"
+                                Placeholder="inches (decimal)"
+                               Unfocused="OnVariationUnFocused"
+                               Text="{Binding SelectedCoal}"
+                                HorizontalOptions="StartAndExpand"
+                                Keyboard="Numeric"
+                                Grid.Row="5"
+                                Grid.Column="1"/>
+                    </Grid>
+                </StackLayout>
+
+                <!-- Loading Block -->
+                <StackLayout BackgroundColor="White" Padding="5">
+                    <CollectionView ItemsSource="{Binding LoadStrings}">
+                        <CollectionView.Header>
+                            <StackLayout>
+								<Label Text="Loading Recipe"
+                                       Padding="5"
+                                       VerticalOptions="Center"
+									   HorizontalOptions="StartAndExpand"/>
+                                <Label Text="{Binding LoadDescription}"
+                                       Padding="5"
+                                       VerticalOptions="End"
+                                       FontSize="Caption"
+                                       HorizontalOptions="StartAndExpand"/>
+							</StackLayout>
+						</CollectionView.Header>
+                        <CollectionView.Footer>
+                            <StackLayout>
+                                <Button Clicked="OnReadyToTestClicked"
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="CenterAndExpand"
+                                        Text="Ready To Test"/>
+							</StackLayout>
+						</CollectionView.Footer>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+									</Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="20"/> <!--ID-->
+                                        <ColumnDefinition Width="18"/> <!--ID-->
+                                        <ColumnDefinition Width="68"/> <!--Number of rounds-->
+                                        <ColumnDefinition Width="14"/> <!--Number of rounds-->
+                                        <ColumnDefinition Width="52"/> <!--Powder Charge-->
+                                        <ColumnDefinition Width="35"/> <!--Powder Charge-->
+                                        <ColumnDefinition Width="45"/> <!--OAL-->
+                                        <ColumnDefinition Width="45"/> <!--OAL-->
+									</Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0"
+                                           Text="ID:"
+											VerticalOptions="Center"
+                                           HorizontalOptions="Start"
+											FontSize="Small"/>
+
+                                    <Label Grid.Column="1"
+                                           Text="{Binding ID}"
+											FontSize="Small"
+											FontAttributes="Bold"
+                                           HorizontalOptions="Start"
+											VerticalOptions="Center"/>
+									
+                                    <Label Grid.Column="2"
+                                           Text="# Rounds:"
+											FontSize="Small"
+                                           HorizontalOptions="Start"
+											VerticalOptions="Center"/>
+
+                                    <Label Grid.Column="3"
+                                           Text="{Binding NumRounds}"
+                                           FontAttributes="Bold"
+											FontSize="Small"
+                                           HorizontalOptions="Start"
+											VerticalOptions="Center"/>
+
+                                    <Label Grid.Column="4"
+                                           Text="Charge:"
+											FontSize="Small"
+                                           HorizontalOptions="Start"
+											VerticalOptions="Center"/>
+
+                                    <Label Grid.Column="5"
+                                           Text="{Binding PowderCharge, StringFormat='{0:F1}'}"
+                                           FontAttributes="Bold"
+											FontSize="Small"
+                                           HorizontalOptions="Start"
+											VerticalOptions="Center"/>
+
+                                    <Label Grid.Column="6"
+                                           Text="COAL:"
+											FontSize="Small"
+                                           HorizontalOptions="Start"
+											VerticalOptions="Center"/>
+
+                                    <Label Grid.Column="7"
+                                           Text="{Binding Coal, StringFormat='{0:F3}'}"
+                                           FontAttributes="Bold"
+											FontSize="Small"
+                                           HorizontalOptions="Start"
+											VerticalOptions="Center"/>
+								</Grid>
+							</DataTemplate>
+						</CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
