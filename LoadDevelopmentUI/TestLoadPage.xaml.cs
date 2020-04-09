@@ -29,6 +29,8 @@ namespace LoadDevelopmentUI
             this.modelView = new ModelView.TestLoadModelView(App.Database, loadBeingTested);
             this.BindingContext = modelView;
             this.ShotStringsListView.ItemsSource = modelView.ShotStrings;
+            this.ShotStringButton.IsEnabled = false;
+            this.SuggestionsButton.IsEnabled = true;
         }
 
         async void ShotStringsListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
@@ -39,7 +41,6 @@ namespace LoadDevelopmentUI
 
         void SuggestionListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
         {
-            int x = 0;
 	    }
 
         async void ViewVelocityGraphToolbarItem_Clicked(System.Object sender, System.EventArgs e)
@@ -72,7 +73,7 @@ namespace LoadDevelopmentUI
             {
                 suggestions.Add(new Suggestion 
 		        { 
-		            Display = string.Format("New load at {0:F1} gr", d.X), 
+		            Display = string.Format("New Load at {0:F1} gr", d.X), 
 		            Detail = "Suggested Velocity Node" 
 		        });
 	        }
