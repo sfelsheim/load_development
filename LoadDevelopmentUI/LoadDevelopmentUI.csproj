@@ -17,16 +17,21 @@
     <Folder Include="ModelView\" />
     <Folder Include="DataAccess\" />
     <Folder Include="Helper\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="FileAccessHelper.cs" />
     <Compile Remove="TestLayoutPage.xaml.cs" />
     <Compile Remove="Model\Shot.cs" />
     <Compile Remove="Model\ShotString.cs" />
+    <Compile Remove="Pages\DevelopPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.iOS">
       <HintPath>..\..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\13.10.0.17\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\NewRiflePage.xaml" />
   </ItemGroup>
 </Project>
