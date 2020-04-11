@@ -24,6 +24,8 @@ namespace DataAccess.Model
         public float SdVelocity { get; set; }
 
         [Ignore]
+        public bool ShowSelect { get; } = false;
+        [Ignore]
         public bool VaryByPowderCharge { get; set; } = true;
 
         [Ignore]

@@ -57,6 +57,7 @@ namespace LoadDevelopmentUI
             this.SuggestionsButton.IsEnabled = true;
 
             this.ShotStringsListView.ItemsSource = modelView.ShotStrings;
+            this.BuildLoadFromSuggestionsButton.IsVisible = false;
 	    }
 
         void SuggestionsButton_Clicked(object sender, EventArgs e)
@@ -79,6 +80,12 @@ namespace LoadDevelopmentUI
 	        }
             modelView.Suggestions = suggestions;
             this.ShotStringsListView.ItemsSource = modelView.Suggestions;
+            this.BuildLoadFromSuggestionsButton.IsVisible = true;
         }
+
+        void BuildLoadFromSuggestionsButton_Clicked(object sender, EventArgs e)
+        { 
+
+	    }
     }
 }

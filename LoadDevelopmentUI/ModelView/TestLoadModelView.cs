@@ -10,6 +10,7 @@ namespace LoadDevelopmentUI.ModelView
     { 
         public string Display { get; set; }
         public string Detail { get; set; }
+        public bool ShowSelect { get; } = true;
     }
 
     public class TestLoadModelView : INotifyPropertyChanged

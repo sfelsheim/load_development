@@ -3,8 +3,7 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="LoadDevelopmentUI.TestLoadPage" 
 			 Title="Test Load" 
-			 Padding="3,10,3,3"
-             BackgroundColor="LightGray">
+			 Padding="3,10,3,3">
     <ContentPage.Content>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -16,27 +15,67 @@
                 <RowDefinition></RowDefinition>
 	        </Grid.RowDefinitions>
             <Button x:Name="ShotStringButton" Grid.Column="0" Grid.Row="0" Text="Shot Strings" 
+		            BorderWidth=".3"
 		            Clicked="ShotStringButton_Clicked"></Button>
 
             <Button x:Name="SuggestionsButton" Grid.Column="1" Grid.Row="0" Text="Suggestions" 
+                    BorderWidth=".3"
 		            Clicked="SuggestionsButton_Clicked"></Button>
 
         <ScrollView Grid.ColumnSpan="2" Grid.Row="1">
-                <!--<ListView ItemsSource="{Binding ShotStrings}"-->
                 <ListView ItemsSource="{Binding ShotStrings}"
                           x:Name="ShotStringsListView">
-                          <!--ItemSelected="ShotStringsListView_ItemSelected"> -->
                     <ListView.Header>
                         <StackLayout Padding="0">
                             <Label Text="{Binding LoadTitle}" HorizontalTextAlignment="Start" Margin="5,4,0,0"/>
                             <Label Text="{Binding PowderLine}" HorizontalOptions="Start" Margin="5,-4,0,0"/>
-                            <Label Text="{Binding BulletLine}" HorizontalOptions="Start" Margin="5,-4,0,5"/>
+                            <Label Text="{Binding BulletLine}" HorizontalOptions="Start" VerticalOptions="Center" Margin="5,-8,0,5"/>
+                            <Button Text="Build Load from Suggestions" 
+                                    x:Name="BuildLoadFromSuggestionsButton"
+				                    HorizontalOptions="End" 
+                                    Clicked="BuildLoadFromSuggestionsButton_Clicked"
+				                    IsVisible="False" Margin="0,-15,0,-5"/>
 						</StackLayout>
 					</ListView.Header>
 					<ListView.ItemTemplate>
                         <DataTemplate>
+                            <!--
 							<TextCell Text="{Binding Display}"
 									  Detail="{Binding Detail}"/>
+                            -->
+                            <ViewCell>
+                                <Grid> 
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="60"/>
+				                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+				                    </Grid.RowDefinitions>
+
+                                    <Label Text="{Binding Display}"
+					                    FontSize="Medium"
+					                    Margin="5,5,5,0"
+					                    Grid.Column="0"
+					                    Grid.Row="0"/>
+
+                                    <Label Text="{Binding Detail}"
+					                    FontSize="Small"
+					                    FontAttributes="Italic"
+					                    TextColor="DarkSlateGray"
+					                    Margin="5,0,5,0"
+					                    Grid.Column="0"
+					                    Grid.Row="1"/>
+                                    <CheckBox
+                                        IsVisible="{Binding ShowSelect}"
+                                        Grid.RowSpan="2"
+                                        Grid.Column="1"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center"/>
+				                </Grid>
+			                </ViewCell>
 						</DataTemplate>
 					</ListView.ItemTemplate>
 				</ListView>
