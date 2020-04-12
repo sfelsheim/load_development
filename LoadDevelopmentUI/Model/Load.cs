@@ -28,6 +28,7 @@ namespace DataAccess.Model
         public float CaseHeadspace { get; set; }
         public bool VaryByPowderCharge { get; set; } = true;
         public bool VaryByCOAL { get; set; } = false;
+        public bool VaryManually { get; set; } = false;
         public int PowderVariations { get; set; } = 10;
         public int CoalVariations { get; set; } = 5;
         public int ShotsPerVariation { get; set; } = 3;

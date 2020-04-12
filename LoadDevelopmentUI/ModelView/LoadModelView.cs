@@ -40,6 +40,7 @@ namespace LoadDevelopmentUI.ModelView
         private string selectedHeadspace;
         private bool isVaryByPowderCharge = true;
         private bool isVaryByCoal = false;
+        private bool isManualVary = false;
         private string powderVariations;
         private string shotsPerVariation;
         private string coalVariations;
@@ -64,6 +65,10 @@ namespace LoadDevelopmentUI.ModelView
             powderManf = database.GetPowderManf();
             bulletManf = database.GetBulletManf();
             primerManf = database.GetPrimerManufacturer();
+
+            if (!string.IsNullOrEmpty(currentLoad.Name))
+                LoadName = currentLoad.Name;
+
         }
 
         public void SaveLoadRecipe(List<LoadString> loadRecipe)
@@ -140,6 +145,19 @@ namespace LoadDevelopmentUI.ModelView
             database.UpdateLoad(currentLoad);
         }
 
+        public bool SelectedManualVary
+        { 
+            get { return isManualVary;  }
+            set
+            { 
+                if (isManualVary !=  value)
+                {
+                    isManualVary = value;
+                    currentLoad.VaryManually = isManualVary;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedManualVary"));
+                }
+	        }
+	    }
         public bool SelectedIsVaryByCoal
         {
             get { return isVaryByCoal;  }

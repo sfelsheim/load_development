@@ -70,6 +70,7 @@
 					                    Grid.Row="1"/>
                                     <CheckBox
                                         IsVisible="{Binding ShowSelect}"
+                                        IsChecked="{Binding IsChecked}"
                                         Grid.RowSpan="2"
                                         Grid.Column="1"
                                         HorizontalOptions="End"

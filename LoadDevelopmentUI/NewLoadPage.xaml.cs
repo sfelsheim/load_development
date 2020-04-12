@@ -22,14 +22,16 @@ namespace LoadDevelopmentUI
             InitializeComponent();
             currentLoad = load;
 
-            modelView = new ModelView.LoadModelView(App.Database, currentLoad);
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            modelView = new ModelView.LoadModelView(App.Database, currentLoad);
             this.BindingContext = modelView;
 
+            // I should refactor this, I just let the modelview do its work
+            // this was the first page on worked on.  Learning :)
 			populateControls();
         }
 

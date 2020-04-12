@@ -20,6 +20,7 @@ namespace LoadDevelopmentUI
 
             this.ShotStringsListView.ItemSelected += ShotStringsListView_ItemSelected;
             this.ShotStringButton.IsEnabled = false;
+            this.ShotStringsListView.SelectionMode = ListViewSelectionMode.Single;
         }
 
         protected override void OnAppearing()
@@ -31,6 +32,7 @@ namespace LoadDevelopmentUI
             this.ShotStringsListView.ItemsSource = modelView.ShotStrings;
             this.ShotStringButton.IsEnabled = false;
             this.SuggestionsButton.IsEnabled = true;
+            this.BuildLoadFromSuggestionsButton.IsVisible = false;
         }
 
         async void ShotStringsListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
@@ -39,10 +41,6 @@ namespace LoadDevelopmentUI
             await Navigation.PushAsync(loadStringScreen);
         }
 
-        void SuggestionListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
-        {
-	    }
-
         async void ViewVelocityGraphToolbarItem_Clicked(System.Object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new TestPlot(modelView)); 
@@ -50,8 +48,8 @@ namespace LoadDevelopmentUI
 
         void ShotStringButton_Clicked(object sender, EventArgs e)
         {
-            this.ShotStringsListView.ItemSelected -= SuggestionListView_ItemSelected;
             this.ShotStringsListView.ItemSelected += ShotStringsListView_ItemSelected;
+            this.ShotStringsListView.SelectionMode = ListViewSelectionMode.Single;
 
             this.ShotStringButton.IsEnabled = false;
             this.SuggestionsButton.IsEnabled = true;
@@ -63,13 +61,13 @@ namespace LoadDevelopmentUI
         void SuggestionsButton_Clicked(object sender, EventArgs e)
         {
             this.ShotStringsListView.ItemSelected -= ShotStringsListView_ItemSelected;
-            this.ShotStringsListView.ItemSelected += SuggestionListView_ItemSelected;
+            this.ShotStringsListView.SelectionMode = ListViewSelectionMode.None;
 
             this.ShotStringButton.IsEnabled = true;
             this.SuggestionsButton.IsEnabled = false;
 
-            List<DataPoint> nodeDataPoints = Helper.VelocityNodeCalc.CalculateVelocityNodes(modelView.ShotStrings);
-            List<Suggestion> suggestions = new List<Suggestion>();
+            var nodeDataPoints = Helper.VelocityNodeCalc.CalculateVelocityNodes(modelView.ShotStrings);
+            var suggestions = new List<Suggestion>();
             foreach(DataPoint d in nodeDataPoints)
             {
                 suggestions.Add(new Suggestion 
@@ -84,8 +82,18 @@ namespace LoadDevelopmentUI
         }
 
         void BuildLoadFromSuggestionsButton_Clicked(object sender, EventArgs e)
-        { 
+        {
+            if (!modelView.HasSuggestionsSelected())
+            {
+                DisplayAlert("No Selections", "Please select suggestions from the list to build a new load.",
+                    "OK");
+                return;
+            }
 
+            foreach (var sug in modelView.Suggestions)
+            {
+
+	        }
 	    }
     }
 }

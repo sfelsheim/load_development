@@ -379,6 +379,7 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="300"/>
@@ -407,6 +408,17 @@
                                 Toggled="CoalSwitchToggled"
                                 x:Name="coalSwitch"
                                 Grid.Row="1"
+                                Grid.Column="1"/>
+
+                        <Label Text="Manually Enter Recipe"
+                               HorizontalOptions="Start"
+                               Grid.Row="2"
+                               Grid.Column="0"/>
+
+                        <Switch IsToggled="{Binding SelectedManualVary}"
+                                HorizontalOptions="EndAndExpand"
+                                x:Name="manualSwitch"
+                                Grid.Row="2"
                                 Grid.Column="1"/>
                     </Grid>
                 </StackLayout>
