@@ -14,7 +14,8 @@ namespace LoadDevelopmentUI
         private enum VariationMode
         {
             Powder,
-            COAL
+            COAL,
+            Manual
         };
 
         public NewLoadPage(Load load)
@@ -30,9 +31,7 @@ namespace LoadDevelopmentUI
             modelView = new ModelView.LoadModelView(App.Database, currentLoad);
             this.BindingContext = modelView;
 
-            // I should refactor this, I just let the modelview do its work
-            // this was the first page on worked on.  Learning :)
-			populateControls();
+            generateLoadRecipe();
         }
 
         public void OnVariationUnFocused(object sender, FocusEventArgs e)
@@ -239,107 +238,10 @@ namespace LoadDevelopmentUI
         {
             string val = (sender as Entry).Text;
             if (!string.IsNullOrEmpty(val) && !string.IsNullOrWhiteSpace(val))
-            {
                 toggleEnableLoadNameDependentControls(true);
-            }
         }
 
         #region Private Methods
-        private void populateControls()
-        {
-            if (!string.IsNullOrEmpty(currentLoad.Name))
-            {
-                modelView.LoadName = currentLoad.Name;
-                toggleEnableLoadNameDependentControls(true);
-            }
-
-            if (currentLoad.RifleID != Guid.Empty)
-            {
-                riflePicker.SelectedItem = modelView.GetRifle(currentLoad.RifleID);
-            }
-
-            if (currentLoad.PowderManfID != Guid.Empty)
-            {
-                modelView.SelectedPowderManf = modelView.GetPowderManf(currentLoad.PowderManfID);
-            }
-
-            if (currentLoad.PowderModelID != Guid.Empty)
-            {
-                modelView.SelectedPowderModel = modelView.GetPowderModel(currentLoad.PowderModelID);
-            }
-
-            if (currentLoad.BulletManfID != Guid.Empty)
-            {
-                modelView.SelectedBulletManf = modelView.GetBulletManf(currentLoad.BulletManfID);
-            }
-
-            if (currentLoad.BulletModelID != Guid.Empty)
-            {
-                var bullet = modelView.GetBullet(currentLoad.BulletModelID);
-
-                modelView.SelectedBullet = bullet;
-
-                modelView.BulletWeights = modelView.GetBulletWeights(
-                    bullet.Name,
-                    bullet.BulletManufacturerID,
-                    bullet.Diameter);
-            }
-
-            if (currentLoad.BulletWeightID != Guid.Empty)
-            {
-                var bullet = modelView.GetBullet(currentLoad.BulletWeightID);
-                modelView.SelectedBulletWeight = bullet;
-            }
-		   
-            if (currentLoad.PrimerManfID != Guid.Empty)
-            {
-                modelView.SelectedPrimerManf = modelView.GetPrimerManufacturer(currentLoad.PrimerManfID);
-            }
-
-            if (currentLoad.PrimerModelID != Guid.Empty)
-                modelView.SelectedPrimerModel = modelView.GetPrimerModel(currentLoad.PrimerModelID);
-
-            if (currentLoad.CaseManfID != Guid.Empty)
-                modelView.SelectedBrass = modelView.GetBrassMaster(currentLoad.CaseManfID);
-
-            modelView.SelectedIsVaryByPowderCharge = currentLoad.VaryByPowderCharge;
-            modelView.SelectedIsVaryByCoal = currentLoad.VaryByCOAL;
-
-            if (currentLoad.ShotsPerVariation > 0)
-                modelView.SelectedShotsPerVariation = currentLoad.ShotsPerVariation.ToString();
-
-            if (currentLoad.VaryByPowderCharge)
-            {
-                if (currentLoad.PowderVariations > 0)
-                    modelView.SelectedVariations = currentLoad.PowderVariations.ToString();
-
-                if (currentLoad.PowderVariationAmount > 0)
-                    modelView.SelectedVariationAmount = currentLoad.PowderVariationAmount.ToString("F1");
-
-                if (currentLoad.StartingPowderCharge > 0)
-                    modelView.SelectedStarting = currentLoad.StartingPowderCharge.ToString("F1");
-				
-				if (currentLoad.COAL > 0)
-					modelView.SelectedCoal = currentLoad.COAL.ToString("F3");
-			}
-            else
-            { 
-                if (currentLoad.CoalVariations > 0)
-                    modelView.SelectedVariations = currentLoad.CoalVariations.ToString();
-
-                if (currentLoad.COALVariationAmount > 0)
-                    modelView.SelectedVariationAmount = currentLoad.COALVariationAmount.ToString("F3");
-
-                if (currentLoad.StartingCOAL > 0)
-                    modelView.SelectedStarting = currentLoad.StartingCOAL.ToString("F3");
-            
-				if (currentLoad.PowderCharge > 0)
-					modelView.SelectedPowderCharge = currentLoad.StartingPowderCharge.ToString("F1");
-			}
-
-            generateLoadRecipe();
-
-        }
 
         private void toggleEnableLoadNameDependentControls(bool enabled)
         {
@@ -377,7 +279,7 @@ namespace LoadDevelopmentUI
                 this.powderChargeEntry.IsEnabled = true;
                 this.powderChargeLabel.TextColor = Color.Black;
             }
-            else
+            else if (mode == VariationMode.Powder)
             {
                 this.variationAmountEntry.Text = "0.3";
                 this.startingEntry.Placeholder = "gr";
@@ -387,6 +289,9 @@ namespace LoadDevelopmentUI
                 this.powderChargeEntry.IsEnabled = false;
                 this.powderChargeLabel.TextColor = Color.LightGray;
             }
+            else // VariationMode.Manual
+            { 
+	        }
         }
 
         #endregion
