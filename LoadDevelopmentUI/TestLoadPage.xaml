@@ -39,10 +39,6 @@
 					</ListView.Header>
 					<ListView.ItemTemplate>
                         <DataTemplate>
-                            <!--
-							<TextCell Text="{Binding Display}"
-									  Detail="{Binding Detail}"/>
-                            -->
                             <ViewCell>
                                 <Grid> 
                                     <Grid.ColumnDefinitions>
