@@ -63,13 +63,13 @@ namespace DataAccess.Model
                 }
                 else
                 {
-                    value = string.Format("{0} at {1:F1} gr at {2:F3} COAL",
+                    value = string.Format("{0} at {1:F1} gr, {2:F3} COAL",
                         NumRounds, PowderCharge, Coal);
 		        }
 
                 if (AvgVelocity > 0)
                 {
-                    value += string.Format(" :  AVG VEL {0}, SD {1:F1}, ES {2}",
+                    value += string.Format(" : AVG {0}, SD {1:F1}, ES {2}",
                         AvgVelocity, SdVelocity, EsVelocity);
 				}
 

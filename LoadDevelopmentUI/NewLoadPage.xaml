@@ -475,7 +475,7 @@
                                Grid.Column="1"/>
 
                         <Button Text="Add"
-                                HorizontalOptions="Center"
+                                HorizontalOptions="End"
 				                Grid.Row="3"
                                 Clicked="AddManualVariationButtonClicked"
 				                Grid.ColumnSpan="2"/>
@@ -614,7 +614,7 @@
                                 <Button Text="Remove Selected"
                                         x:Name="deleteManualVariationButton"
                                         VerticalOptions="Center"
-                                        HorizontalOptions="StartAndExpand"
+                                        HorizontalOptions="End"
                                         Clicked="LoadRecipeDeleteButtonClicked"/>
 
 							</StackLayout>
@@ -623,7 +623,7 @@
                             <StackLayout>
                                 <Button Clicked="OnReadyToTestClicked"
                                         VerticalOptions="Center"
-                                        HorizontalOptions="CenterAndExpand"
+                                        HorizontalOptions="End"
                                         Text="Ready To Test"/>
 							</StackLayout>
 						</CollectionView.Footer>
