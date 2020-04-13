@@ -49,7 +49,9 @@ select
     Load.ShotsPerVariation,
     Load.VaryByCOAL,
     Load.VaryByPowderCharge,
+    Load.VaryManually as VaryByManual,
     Load.PowderVariations,
+    Load.ManualVariations,
     Load.PowderVariationAmount,
     Load.PowderCharge,
     Load.CoalVariations,
@@ -217,6 +219,7 @@ from Load
             _database.CreateTableAsync<PrimerModelMaster>().Wait();
             _database.CreateTableAsync<BrassMaster>().Wait();
             _database.CreateTableAsync<LoadString>().Wait();
+            _database.CreateTableAsync<ManualVariation>().Wait();
         }
     }
 }

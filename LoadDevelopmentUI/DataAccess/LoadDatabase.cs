@@ -227,6 +227,29 @@ namespace DataAccess
             }
         }
 
+        public void DeleteManualVariation(Guid loadStringID)
+        {
+            lock (locker)
+            {
+                database.Delete(new ManualVariation { ManualVariationID = loadStringID });
+	        }
+        }
+
+        public void InsertManualVariation(ManualVariation manualVariation)
+        {
+            lock (locker)
+            {
+                database.Insert(manualVariation);
+	        }
+        }
+
+        public List<ManualVariation> GetManualVariations(Guid loadId)
+        { 
+            lock(locker)
+            {
+                return database.Table<ManualVariation>().Where(c => c.LoadID == loadId).ToList();
+	        }
+	    }
         public void SaveRifle(Rifle rifle)
         {
             lock (locker)

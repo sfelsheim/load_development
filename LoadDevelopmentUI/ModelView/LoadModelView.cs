@@ -40,6 +40,7 @@ namespace LoadDevelopmentUI.ModelView
         private string selectedHeadspace;
         private bool isVaryByPowderCharge = true;
         private bool isVaryByCoal = false;
+        private bool isManualVary = false;
         private string powderVariations;
         private string shotsPerVariation;
         private string coalVariations;
@@ -64,6 +65,109 @@ namespace LoadDevelopmentUI.ModelView
             powderManf = database.GetPowderManf();
             bulletManf = database.GetBulletManf();
             primerManf = database.GetPrimerManufacturer();
+
+            if (!string.IsNullOrEmpty(currentLoad.Name))
+                LoadName = currentLoad.Name;
+
+            if (currentLoad.RifleID != Guid.Empty)
+                SelectedRifle = GetRifle(currentLoad.RifleID);
+
+            if (currentLoad.PowderManfID != Guid.Empty)
+                SelectedPowderManf = GetPowderManf(currentLoad.PowderManfID);
+
+            if (currentLoad.PowderModelID != Guid.Empty)
+                SelectedPowderModel = GetPowderModel(currentLoad.PowderModelID);
+
+            if (currentLoad.BulletManfID != Guid.Empty)
+                SelectedBulletManf = GetBulletManf(currentLoad.BulletManfID);
+
+            if (currentLoad.BulletModelID != Guid.Empty)
+            {
+                var bullet = GetBullet(currentLoad.BulletModelID);
+
+                SelectedBullet = bullet;
+
+                BulletWeights = GetBulletWeights(
+                    bullet.Name,
+                    bullet.BulletManufacturerID,
+                    bullet.Diameter);
+            }
+
+            if (currentLoad.BulletWeightID != Guid.Empty)
+                SelectedBulletWeight = GetBullet(currentLoad.BulletWeightID);
+
+            if (currentLoad.PrimerManfID != Guid.Empty)
+            {
+                SelectedPrimerManf = GetPrimerManufacturer(currentLoad.PrimerManfID);
+            }
+
+            if (currentLoad.PrimerModelID != Guid.Empty)
+                SelectedPrimerModel = GetPrimerModel(currentLoad.PrimerModelID);
+
+            if (currentLoad.CaseManfID != Guid.Empty)
+                SelectedBrass = GetBrassMaster(currentLoad.CaseManfID);
+
+            SelectedIsVaryByPowderCharge = currentLoad.VaryByPowderCharge;
+            SelectedIsVaryByCoal = currentLoad.VaryByCOAL;
+            SelectedManualVary = currentLoad.VaryManually;
+
+            if (currentLoad.ShotsPerVariation > 0)
+                SelectedShotsPerVariation = currentLoad.ShotsPerVariation.ToString();
+
+            if (currentLoad.VaryByPowderCharge)
+            {
+                if (currentLoad.PowderVariations > 0)
+                    SelectedVariations = currentLoad.PowderVariations.ToString();
+
+                if (currentLoad.PowderVariationAmount > 0)
+                    SelectedVariationAmount = currentLoad.PowderVariationAmount.ToString("F1");
+
+                if (currentLoad.StartingPowderCharge > 0)
+                    SelectedStarting = currentLoad.StartingPowderCharge.ToString("F1");
+
+                if (currentLoad.COAL > 0)
+                    SelectedCoal = currentLoad.COAL.ToString("F3");
+            }
+            else
+            {
+                if (currentLoad.CoalVariations > 0)
+                    SelectedVariations = currentLoad.CoalVariations.ToString();
+
+                if (currentLoad.COALVariationAmount > 0)
+                    SelectedVariationAmount = currentLoad.COALVariationAmount.ToString("F3");
+
+                if (currentLoad.StartingCOAL > 0)
+                    SelectedStarting = currentLoad.StartingCOAL.ToString("F3");
+
+                if (currentLoad.PowderCharge > 0)
+                    SelectedPowderCharge = currentLoad.StartingPowderCharge.ToString("F1");
+            }
+        }
+
+        public void DeleteManualVariation(Guid loadStringID)
+        {
+            database.DeleteManualVariation(loadStringID);
+            currentLoad.ManualVariations = currentLoad.ManualVariations - 1;
+            database.UpdateLoad(currentLoad);
+        }
+
+        public List<ManualVariation> GetManualVariations(Guid loadID)
+        {
+            return database.GetManualVariations(loadID);
+        }
+
+        public void AddManualVariation(Guid loadId, int numRounds, float coal, float powderCharge)
+        {
+            database.InsertManualVariation(new ManualVariation
+            {
+                LoadID = loadId,
+                ManualVariationID = Guid.NewGuid(),
+                Coal = coal,
+                NumRounds = numRounds,
+                PowderCharge = powderCharge
+            });
+            currentLoad.ManualVariations = currentLoad.ManualVariations + 1;
+            database.UpdateLoad(currentLoad);
         }
 
         public void SaveLoadRecipe(List<LoadString> loadRecipe)
@@ -140,6 +244,19 @@ namespace LoadDevelopmentUI.ModelView
             database.UpdateLoad(currentLoad);
         }
 
+        public bool SelectedManualVary
+        { 
+            get { return isManualVary;  }
+            set
+            { 
+                if (isManualVary !=  value)
+                {
+                    isManualVary = value;
+                    currentLoad.VaryManually = isManualVary;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedManualVary"));
+                }
+	        }
+	    }
         public bool SelectedIsVaryByCoal
         {
             get { return isVaryByCoal;  }

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="MathNet.Numerics" Version="4.9.0" />
@@ -23,10 +23,14 @@
     <Compile Remove="TestLayoutPage.xaml.cs" />
     <Compile Remove="Model\Shot.cs" />
     <Compile Remove="Model\ShotString.cs" />
+    <Compile Remove="Pages\DevelopPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.iOS">
       <HintPath>..\..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\13.10.0.17\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\NewRiflePage.xaml" />
   </ItemGroup>
 </Project>
