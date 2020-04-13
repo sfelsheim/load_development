@@ -45,7 +45,15 @@ namespace LoadDevelopmentUI.ModelView
             shotStrings = database.GetLoadStrings(currentLoad.LoadID);
             loadDisplay = database.GetDisplayLoad(currentLoad.LoadID);
             foreach (var val in shotStrings)
-                val.VaryByPowderCharge = loadDisplay.VaryByPowderCharge;
+            {
+                if (loadDisplay.VaryByPowderCharge)
+                    val.Variation = VariationType.ByPowder;
+                else if (loadDisplay.VaryByCOAL)
+                    val.Variation = VariationType.ByCoal;
+                else
+                    val.Variation = VariationType.Manual;
+
+            }
         }
 
         public LoadDatabase Database { get { return database;  } }

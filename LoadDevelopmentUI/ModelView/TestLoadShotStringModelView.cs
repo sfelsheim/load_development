@@ -68,7 +68,7 @@ namespace LoadDevelopmentUI.ModelView
 
         public float Coal
         { 
-            get { return currentLoad.COAL;  }
+            get { return currentLoadString.Coal;  }
 		}
         public int Avg
         {

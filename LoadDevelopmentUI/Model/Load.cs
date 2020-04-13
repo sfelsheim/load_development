@@ -31,6 +31,7 @@ namespace DataAccess.Model
         public bool VaryManually { get; set; } = false;
         public int PowderVariations { get; set; } = 10;
         public int CoalVariations { get; set; } = 5;
+        public int ManualVariations { get; set; }
         public int ShotsPerVariation { get; set; } = 3;
         public float PowderVariationAmount { get; set; } = 0.03F;
         public float StartingPowderCharge { set; get; } = -1F;

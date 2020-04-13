@@ -144,6 +144,32 @@ namespace LoadDevelopmentUI.ModelView
             }
         }
 
+        public void DeleteManualVariation(Guid loadStringID)
+        {
+            database.DeleteManualVariation(loadStringID);
+            currentLoad.ManualVariations = currentLoad.ManualVariations - 1;
+            database.UpdateLoad(currentLoad);
+        }
+
+        public List<ManualVariation> GetManualVariations(Guid loadID)
+        {
+            return database.GetManualVariations(loadID);
+        }
+
+        public void AddManualVariation(Guid loadId, int numRounds, float coal, float powderCharge)
+        {
+            database.InsertManualVariation(new ManualVariation
+            {
+                LoadID = loadId,
+                ManualVariationID = Guid.NewGuid(),
+                Coal = coal,
+                NumRounds = numRounds,
+                PowderCharge = powderCharge
+            });
+            currentLoad.ManualVariations = currentLoad.ManualVariations + 1;
+            database.UpdateLoad(currentLoad);
+        }
+
         public void SaveLoadRecipe(List<LoadString> loadRecipe)
         {
 			database.SaveLoadString(loadRecipe);

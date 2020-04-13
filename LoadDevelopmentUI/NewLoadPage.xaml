@@ -418,14 +418,71 @@
 
                         <Switch IsToggled="{Binding SelectedManualVary}"
                                 HorizontalOptions="EndAndExpand"
+                                Toggled="ManualSwitchToggled"
                                 x:Name="manualSwitch"
                                 Grid.Row="2"
                                 Grid.Column="1"/>
                     </Grid>
                 </StackLayout>
 
+                <!-- Manual variation creation-->
+                <StackLayout IsVisible="False" BackgroundColor="White" Padding="5" x:Name="manualVariationStackLayout">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="260"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Number of Rounds"
+                               HorizontalOptions="Start"
+                               Grid.Row="0"
+                               Grid.Column="0"/>
+
+                        <Entry x:Name="manualNumRoundsEntry"
+                               HorizontalOptions="StartAndExpand"
+                               Keyboard="Numeric"
+                               Grid.Row="0"
+                               Grid.Column="1"/>
+
+                        <Label Text="Powder Charge"
+                               HorizontalOptions="Start"
+                               Grid.Row="1"
+                               Grid.Column="0"/>
+
+                        <Entry x:Name="manualPowderChargeEntry"
+                               HorizontalOptions="StartAndExpand"
+                               Keyboard="Numeric"
+                               Placeholder="grains"
+                               Grid.Row="1"
+                               Grid.Column="1"/>
+
+                        <Label Text="COAL"
+                               HorizontalOptions="Start"
+                               Grid.Row="2"
+                               Grid.Column="0"/>
+
+                        <Entry x:Name="manualCoalEntry"
+                               HorizontalOptions="StartAndExpand"
+                               Keyboard="Numeric"
+                               Placeholder="inches (decimal)"
+                               Grid.Row="2"
+                               Grid.Column="1"/>
+
+                        <Button Text="Add"
+                                HorizontalOptions="Center"
+				                Grid.Row="3"
+                                Clicked="AddManualVariationButtonClicked"
+				                Grid.ColumnSpan="2"/>
+		            </Grid>
+	            </StackLayout>
                 <!-- Variation criteria -->
-                <StackLayout BackgroundColor="White" Padding="5">
+                <StackLayout BackgroundColor="White" Padding="5" x:Name="variationStackLayout">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40"/>
@@ -541,7 +598,8 @@
 
                 <!-- Loading Block -->
                 <StackLayout BackgroundColor="White" Padding="5">
-                    <CollectionView ItemsSource="{Binding LoadStrings}">
+                    <CollectionView ItemsSource="{Binding LoadStrings}" 
+				            SelectionMode="Multiple" x:Name="loadBlockCollectionView">
                         <CollectionView.Header>
                             <StackLayout>
 								<Label Text="Loading Recipe"
@@ -553,6 +611,12 @@
                                        VerticalOptions="End"
                                        FontSize="Caption"
                                        HorizontalOptions="StartAndExpand"/>
+                                <Button Text="Remove Selected"
+                                        x:Name="deleteManualVariationButton"
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="StartAndExpand"
+                                        Clicked="LoadRecipeDeleteButtonClicked"/>
+
 							</StackLayout>
 						</CollectionView.Header>
                         <CollectionView.Footer>
