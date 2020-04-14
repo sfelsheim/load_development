@@ -8,6 +8,8 @@ namespace LoadDevelopmentUI.ModelView
 {
     public class LoadModelView : INotifyPropertyChanged
     {
+        private Helper.ManualVariationCreator mvCreator;
+
         // persistance of user values
         private LoadDatabase database;
 
@@ -59,7 +61,7 @@ namespace LoadDevelopmentUI.ModelView
         {
             this.database = database;
             this.currentLoad = load;
-
+            this.mvCreator = new Helper.ManualVariationCreator(database);
             rifles = database.GetRifles();
             calibers = database.GetCalibers();
             powderManf = database.GetPowderManf();
@@ -158,14 +160,8 @@ namespace LoadDevelopmentUI.ModelView
 
         public void AddManualVariation(Guid loadId, int numRounds, float coal, float powderCharge)
         {
-            database.InsertManualVariation(new ManualVariation
-            {
-                LoadID = loadId,
-                ManualVariationID = Guid.NewGuid(),
-                Coal = coal,
-                NumRounds = numRounds,
-                PowderCharge = powderCharge
-            });
+            database.InsertManualVariation(
+               mvCreator.CreateManualVariation(loadId, numRounds, coal, powderCharge));
             currentLoad.ManualVariations = currentLoad.ManualVariations + 1;
             database.UpdateLoad(currentLoad);
         }

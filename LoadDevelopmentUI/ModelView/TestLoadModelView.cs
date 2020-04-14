@@ -6,27 +6,7 @@ using DataAccess.Model;
 
 namespace LoadDevelopmentUI.ModelView
 {
-    public class Suggestion : INotifyPropertyChanged
-    {
-        private bool isChecked = false;
-        public string Display { get; set; }
-        public string Detail { get; set; }
-        public bool ShowSelect { get; } = true;
-        public bool IsChecked 
-	    {
-            get { return isChecked; }
-	        set
-            { 
-                if (value != isChecked)
-                {
-                    isChecked = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsChecked"));
-                }
-	        }
-	    }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-    }
+    
 
     public class TestLoadModelView : INotifyPropertyChanged
     {
@@ -112,6 +92,15 @@ namespace LoadDevelopmentUI.ModelView
 	        }
 
             return false;
+        }
+
+        public void UnSelectSuggestions()
+        {
+            foreach(var sug in Suggestions)
+            {
+                if (sug.IsChecked)
+                    sug.IsChecked = false;
+	        }
         }
     }
 }

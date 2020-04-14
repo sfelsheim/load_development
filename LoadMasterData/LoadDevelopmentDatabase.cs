@@ -63,7 +63,7 @@ from Load
      LEFT OUTER JOIN PowderManufacturerMaster on Load.PowderManfID = PowderManufacturerMaster.PowderManufacturerMasterID
      LEFT OUTER JOIN PowderModelMaster on Load.PowderModelID = PowderModelMaster.PowderModelMasterID
      LEFT OUTER JOIN BulletManufacturerMaster on Load.BulletManfID = BulletManufacturerMaster.BulletManufacturerMasterID
-     LEFT OUTER JOIN BulletModelMaster on Load.BulletModelID = BulletModelMaster.BulletModelID
+     LEFT OUTER JOIN BulletModelMaster on Load.BulletWeightID = BulletModelMaster.BulletModelID
      LEFT OUTER JOIN PrimerManufacturerMaster on Load.PrimerManfID = PrimerManufacturerMaster.PrimerManufacturerId
      LEFT OUTER JOIN PrimerModelMaster on Load.PrimerModelID = PrimerModelMaster.PrimerModelId
      LEFT OUTER JOIN BrassMaster on Load.CaseManfID = BrassMaster.BrassMasterId");
