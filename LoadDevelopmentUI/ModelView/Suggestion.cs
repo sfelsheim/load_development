@@ -3,6 +3,11 @@ using System.ComponentModel;
 
 namespace LoadDevelopmentUI.ModelView
 {
+    public class VelocityNodeSuggestionData
+    { 
+        public float PowderCharge { get; set; }
+    }
+
     public class Suggestion : INotifyPropertyChanged
     {
         private bool isChecked = false;
@@ -21,6 +26,8 @@ namespace LoadDevelopmentUI.ModelView
                 }
             }
         }
+
+        public VelocityNodeSuggestionData SuggestionData { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

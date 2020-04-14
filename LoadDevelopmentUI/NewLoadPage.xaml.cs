@@ -7,6 +7,7 @@ namespace LoadDevelopmentUI
 {
     public partial class NewLoadPage : ContentPage
     {
+        private Helper.ManualVariationCreator mvCreator;
         private ModelView.LoadModelView modelView;
         private decimal currentRifleCaliber = -1.0M;
         private Load currentLoad;
@@ -22,6 +23,7 @@ namespace LoadDevelopmentUI
         {
             InitializeComponent();
             currentLoad = load;
+            mvCreator = new Helper.ManualVariationCreator(App.Database);
         }
 
         protected override void OnAppearing()
@@ -83,16 +85,7 @@ namespace LoadDevelopmentUI
                 int i = 0;
                 foreach(var man in manuals)
                 {
-                    loadRecipe.Add(new LoadString
-                    {
-                        LoadID = currentLoad.LoadID,
-                        LoadStringID = man.ManualVariationID,
-                        ID = (i + 1).ToString(),
-                        NumRounds = man.NumRounds,
-                        PowderCharge = man.PowderCharge,
-                        Coal = man.Coal,
-                        Variation = VariationType.Manual
-                    }); ;
+                    loadRecipe.Add(mvCreator.CreateLoadString(man, (i+1).ToString()));
                     ++i;
 		        }
 	        }

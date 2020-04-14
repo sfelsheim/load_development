@@ -93,5 +93,14 @@ namespace LoadDevelopmentUI.ModelView
 
             return false;
         }
+
+        public void UnSelectSuggestions()
+        {
+            foreach(var sug in Suggestions)
+            {
+                if (sug.IsChecked)
+                    sug.IsChecked = false;
+	        }
+        }
     }
 }
