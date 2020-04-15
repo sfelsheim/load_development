@@ -611,7 +611,7 @@
                                        VerticalOptions="End"
                                        FontSize="Caption"
                                        HorizontalOptions="StartAndExpand"/>
-                                <Button Text="Remove Selected"
+                                <Button Text="Remove"
                                         x:Name="deleteManualVariationButton"
                                         VerticalOptions="Center"
                                         HorizontalOptions="End"
