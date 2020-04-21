@@ -20,8 +20,9 @@ namespace LoadDevelopmentUI.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             OxyPlot.Xamarin.Forms.Platform.iOS.PlotViewRenderer.Init();
-
+            Forms9Patch.iOS.Settings.Initialize(this);
             FileAccessHelper.GetLocalFilePath("master.db");
+            Syncfusion.SfImageEditor.XForms.iOS.SfImageEditorRenderer.Init();
 
             LoadApplication(new App());
 

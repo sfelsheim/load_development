@@ -1,4 +1,6 @@
-﻿using DataAccess.Model;
+﻿using System;
+using DataAccess.Model;
+using Plugin.Media;
 using Xamarin.Forms;
 
 namespace LoadDevelopmentUI
@@ -43,6 +45,12 @@ namespace LoadDevelopmentUI
 
             modelView.UpdateLoadStringShot(shot);
             modelView.UpdateStats();
+        }
+
+        async void CaptureTargetButtonClicked(object sender, EventArgs e)
+        {
+            var capturePage = new TargetImagePage(loadString);
+            await Navigation.PushAsync(capturePage);
         }
     }
 }

@@ -12,6 +12,9 @@
     <PackageReference Include="MathNet.Numerics" Version="4.9.1" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
     <PackageReference Include="OxyPlot.Xamarin.Forms" Version="1.0.0" />
+    <PackageReference Include="Forms9Patch" Version="2.2.6" />
+    <PackageReference Include="Syncfusion.Xamarin.SfImageEditor" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Licensing" Version="18.1.0.44" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ModelView\" />

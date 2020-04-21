@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:Forms9Patch="clr-namespace:Forms9Patch;assembly=Forms9Patch"
+	         x:Class="LoadDevelopmentUI.TargetImagePage"
+             xmlns:ie="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms"
+	         Title="Target Image" Padding="3,10,3,3">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid IsClippedToBounds="False">
+	        <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+	            <Button Text="Capture Target Image"
+                        Grid.Row="0"
+		    	        Clicked="CaptureTargetImageButtonClicked" 
+		                HorizontalOptions="End"/>
+                <Button Text="Select Target Image"
+                        Grid.Row="1"
+                        HorizontalOptions="End"
+                        Clicked="SelectTargetImageButtonClicked"/>
+
+                <ie:SfImageEditor x:Name="targetImage"
+			          HorizontalOptions="Center"
+			          Source="{Binding TargetImage}"
+			          ImageSaving="TargetImageEditorIsSaving" 
+			          Grid.Row="2"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

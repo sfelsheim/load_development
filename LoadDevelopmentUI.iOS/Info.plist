@@ -38,5 +38,9 @@
 	<string>1.0.0</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Load Development needs access to the camera to take photos.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Load Development needs access to your Photo Library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Load Development needs access to your Photo Library</string>
 </dict>
 </plist>
