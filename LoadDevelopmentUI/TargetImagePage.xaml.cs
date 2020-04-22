@@ -59,7 +59,6 @@ namespace LoadDevelopmentUI
                 new Plugin.Media.Abstractions.StoreCameraMediaOptions
                 {
                     PhotoSize = Plugin.Media.Abstractions.PhotoSize.Small,
-                    SaveToAlbum = false,
                     CompressionQuality = 92,
                     AllowCropping = false,
                     Directory = IMAGE_DIRECTORY,
@@ -72,8 +71,21 @@ namespace LoadDevelopmentUI
             });
         }
 
-        void SelectTargetImageButtonClicked(object sender, EventArgs args)
-        { 
+        async void SelectTargetImageButtonClicked(object sender, EventArgs args)
+        {
+            var file = await CrossMedia.Current.PickPhotoAsync(
+                new Plugin.Media.Abstractions.PickMediaOptions
+                {
+                    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Small,
+                    CompressionQuality = 92
+                });
+
+            modelView.TargetImage = ImageSource.FromStream(() =>
+            {
+                var path = file.Path;
+                DependencyService.Get<ISavePhoto>().CopyPhoto(imageFileName, IMAGE_DIRECTORY, path);
+                return file.GetStream();
+            });
 	    }
 
         void TargetImageEditorIsSaving(object sender, ImageSavingEventArgs args)

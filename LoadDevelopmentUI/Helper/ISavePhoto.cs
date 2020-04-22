@@ -10,5 +10,6 @@ namespace LoadDevelopmentUI.Helper
         string GetPhotoPath(string fileName, string locaiton);
         bool PhotoExists(string fileName, string location);
         void DeletePhoto(string v, string iMAGE_DIRECTORY);
+        void CopyPhoto(string imageFileName, string iMAGE_DIRECTORY, string path);
     }
 }

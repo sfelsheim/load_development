@@ -11,6 +11,17 @@ namespace LoadDevelopmentUI.iOS
 {
     public class SavePhoto : ISavePhoto
     {
+        public void CopyPhoto(string fileName, string location, string fromPath)
+        {
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            documentsPath = Path.Combine(documentsPath, location);
+
+            string toFilePath = Path.Combine(documentsPath, fileName);
+
+            File.Copy(fromPath, toFilePath);
+
+        }
+
         public void DeletePhoto(string fileName, string location)
         {
             var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
