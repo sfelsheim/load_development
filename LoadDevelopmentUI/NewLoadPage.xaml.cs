@@ -212,6 +212,9 @@ namespace LoadDevelopmentUI
         void OnBulletSelectionChanged(object sender, EventArgs e)
         {
             var selectedBulletModel = bulletPicker.SelectedItem as BulletModelMaster;
+            if (selectedBulletModel == null)
+                return;
+
             modelView.BulletWeights = modelView.GetBulletWeights(
                 selectedBulletModel.Name,
                 modelView.SelectedBulletManf.BulletManufacturerMasterID,
@@ -272,6 +275,8 @@ namespace LoadDevelopmentUI
 
             bulletManfPicker.IsEnabled = true;
             newBulletManfButton.IsEnabled = true;
+
+            modelView.SelectedRifle = (riflePicker.SelectedItem as Rifle);
         }
 
         void PowderChargeSwitchToggled(object sender, ToggledEventArgs e)
