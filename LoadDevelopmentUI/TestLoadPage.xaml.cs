@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Input;
 using DataAccess.Model;
 using LoadDevelopmentUI.ModelView;
 using OxyPlot;
@@ -9,9 +10,12 @@ namespace LoadDevelopmentUI
 {
     public partial class TestLoadPage : ContentPage
     {
+      
+
         private Load loadBeingTested;
         private ModelView.TestLoadModelView modelView;
         private Helper.ManualVariationCreator mvCreator;
+        private ModelView.TestLoadPopupViewModel popUpModelView;
 
         public TestLoadPage(Load load)
         {
@@ -35,12 +39,39 @@ namespace LoadDevelopmentUI
             this.ShotStringButton.IsEnabled = false;
             this.SuggestionsButton.IsEnabled = true;
             this.BuildLoadFromSuggestionsButton.IsVisible = false;
+            this.popUpModelView = new TestLoadPopupViewModel();
+            this.choicePopup.BindingContext = popUpModelView;
         }
 
-        async void ShotStringsListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+        public void ActionPopupClosed(object sender, EventArgs e)
         {
-            var loadStringScreen = new TestLoadString(loadBeingTested, e.SelectedItem as LoadString);
-            await Navigation.PushAsync(loadStringScreen);
+            if (!popUpModelView.WasAccepted)
+                return;
+
+            if (popUpModelView.EditShotsChecked)
+            {
+                var loadStringScreen = new TestLoadString(loadBeingTested, popUpModelView.LoadBeingTested);
+                Navigation.PushAsync(loadStringScreen);
+            }
+            else if (popUpModelView.ViewTargetImageChecked)
+            {
+                var capturePage = new TargetImagePage(popUpModelView.LoadBeingTested);
+                Navigation.PushAsync(capturePage);
+            }
+        }
+
+        void ShotStringsListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+        {
+            if ((e.SelectedItem as LoadString).AvgVelocity > 0)
+            {
+                popUpModelView.LoadBeingTested = e.SelectedItem as LoadString;
+                choicePopup.Show();
+	        }
+            else
+            { 
+                var loadStringScreen = new TestLoadString(loadBeingTested, e.SelectedItem as LoadString);
+                Navigation.PushAsync(loadStringScreen);
+	        }
         }
 
         async void ViewVelocityGraphToolbarItem_Clicked(System.Object sender, System.EventArgs e)
@@ -147,6 +178,10 @@ namespace LoadDevelopmentUI
             load.IsNew = loadBeingTested.IsNew;
 
             return load;
+        }
+
+        void actionRadioGroup_CheckedChanged(System.Object sender, Syncfusion.XForms.Buttons.CheckedChangedEventArgs e)
+        {
         }
     }
 }
