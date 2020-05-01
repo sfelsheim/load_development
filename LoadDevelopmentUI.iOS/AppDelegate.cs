@@ -1,4 +1,6 @@
 ﻿using Foundation;
+using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.XForms.iOS.EffectsView;
 using UIKit;
 
 namespace LoadDevelopmentUI.iOS
@@ -18,13 +20,19 @@ namespace LoadDevelopmentUI.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            new Syncfusion.XForms.iOS.ComboBox.SfComboBoxRenderer();
             global::Xamarin.Forms.Forms.Init();
+            Syncfusion.XForms.iOS.PopupLayout.SfPopupLayoutRenderer.Init();
             OxyPlot.Xamarin.Forms.Platform.iOS.PlotViewRenderer.Init();
             Forms9Patch.iOS.Settings.Initialize(this);
             FileAccessHelper.GetLocalFilePath("master.db");
             Syncfusion.SfImageEditor.XForms.iOS.SfImageEditorRenderer.Init();
 
+            SfListViewRenderer.Init();
+            SfEffectsViewRenderer.Init();
+
             LoadApplication(new App());
+            Syncfusion.XForms.iOS.Buttons.SfRadioButtonRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }

@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoadDevelopmentUI.NewLoadPage"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              Title="Create New Load" Padding="3,10,3,3"
              BackgroundColor="LightGray">
@@ -58,19 +59,25 @@
                                VerticalOptions="CenterAndExpand"
                                Grid.Row="0"
                                Grid.Column="0"/>
-
-                        <Picker Title="Select Rifle"
-                                IsEnabled="False"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                x:Name="riflePicker"
-                                SelectedIndexChanged="OnRifleSelectionChanged"
-                                HorizontalOptions="StartAndExpand"
-                                VerticalOptions="CenterAndExpand"
-                                ItemsSource="{Binding Rifles}"
-                                ItemDisplayBinding="{Binding Name}"
-                                SelectedItem="{Binding SelectedRifle}"
-                                Grid.Row="0"
-                                Grid.Column="1"/>
+                         <combobox:SfComboBox
+						    IsEditableMode="False"
+						    AllowFiltering="True"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             SelectionChanged="OnRifleSelectionChanged"
+                             WidthRequest="300"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding Rifles}"
+                             SelectedItem="{Binding SelectedRifle}"
+						    DisplayMemberPath="Name"
+                             Grid.Row="0"
+                             Watermark="Select Rifle"
+                             WatermarkColor="LightGray"
+                             Grid.Column="1"
+						    x:Name="riflePicker">
+			 </combobox:SfComboBox>
 
                         <Button Text="New"
                                 x:Name="newRifleButton"
@@ -102,18 +109,35 @@
                                Grid.Row="0"
                                Grid.Column="0"/>
 
-                        <Picker Title="Select Powder Manufacturer"
-                                IsEnabled="False"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                x:Name="powderManfPicker"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="StartAndExpand"
-                                ItemsSource="{Binding PowderManf}"
-                                ItemDisplayBinding="{Binding Name}"
-                                SelectedItem="{Binding SelectedPowderManf}"
-                                SelectedIndexChanged="OnPowderManfSelectionChanged"
-                                Grid.Row="0"
-                                Grid.Column="1"/>
+                        <combobox:SfComboBox
+						    IsEditableMode="True"
+						    AllowFiltering="True"
+                             WatermarkColor="LightGray"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             SelectionChanged="OnPowderManfSelectionChanged"
+                             WidthRequest="300"
+                            VerticalOptions="CenterAndExpand"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding PowderManf}"
+                             SelectedItem="{Binding SelectedPowderManf}"
+						    DisplayMemberPath="Name"
+                             Grid.Row="0"
+                             Grid.Column="1"
+                            Watermark="Select Manufacturer"
+						    x:Name="powderManfPicker">
+                            <combobox:SfComboBox.DropDownHeaderView>
+		                        <StackLayout BackgroundColor="#f0f0f0" >
+								<Label  Text="Powder Manufacturer" 
+								    VerticalTextAlignment="Center" 
+								    HorizontalOptions="Center" 
+								    VerticalOptions="Center" 
+								    TextColor="#006bcd" />
+							    </StackLayout>
+							</combobox:SfComboBox.DropDownHeaderView>
+							</combobox:SfComboBox>
 
                         <Button Text="New"
                                 x:Name="newPowderManfButton"
@@ -124,18 +148,38 @@
                                 Grid.Row="0"
                                 Grid.Column="2"/>
 
-                        <Picker Title="Select Powder"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                x:Name="powderPicker"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="StartAndExpand"
-                                ItemsSource="{Binding PowderModel}"
-                                ItemDisplayBinding="{Binding Name}"
-                                SelectedItem="{Binding SelectedPowderModel}"
-                                SelectedIndexChanged="OnPowderModelSelected"
-                                IsEnabled="False"
-                                Grid.Row="1"
-                                Grid.Column="1"/>
+                        <combobox:SfComboBox
+						    IsEditableMode="True"
+						    AllowFiltering="True"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             SelectionChanged="OnPowderModelSelected"
+                             WidthRequest="300"
+                            VerticalOptions="CenterAndExpand"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding PowderModel}"
+                             SelectedItem="{Binding SelectedPowderModel}"
+						    DisplayMemberPath="Name"
+                            ShowClearButton="True"
+                            Watermark="Select Powder"
+                             WatermarkColor="LightGray"
+                             Grid.Row="1"
+                             Grid.Column="1"
+						    x:Name="powderPicker">
+
+                            <combobox:SfComboBox.DropDownHeaderView>
+		                        <StackLayout BackgroundColor="#f0f0f0" >
+								<Label  Text="Powder" 
+								    VerticalTextAlignment="Center" 
+								    HorizontalOptions="Center" 
+								    VerticalOptions="Center" 
+								    TextColor="#006bcd" />
+							    </StackLayout>
+							</combobox:SfComboBox.DropDownHeaderView>
+			             </combobox:SfComboBox>
+
 
                         <Button Text="New"
                                 x:Name="newPowderButton"
@@ -168,18 +212,37 @@
                                Grid.Row="0"
                                Grid.Column="0"/>
 
-                        <Picker Title="Select Bullet Manufacturer"
-                                IsEnabled="False"
-                                x:Name="bulletManfPicker"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="StartAndExpand"
-                                ItemsSource="{Binding BulletManf}"
-                                ItemDisplayBinding="{Binding Name}"
-                                SelectedItem="{Binding SelectedBulletManf}"
-                                SelectedIndexChanged="OnBulletManfSelectionChanged"
-                                Grid.Row="0"
-                                Grid.Column="1"/>
+                        <combobox:SfComboBox
+                             Watermark="Select Manufacturer"
+                            WatermarkColor="LightGray"
+						    IsEditableMode="True"
+						    AllowFiltering="True"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             SelectionChanged="OnBulletManfSelectionChanged"
+                             WidthRequest="300"
+                            VerticalOptions="CenterAndExpand"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding BulletManf}"
+                             SelectedItem="{Binding SelectedBulletManf}"
+						    DisplayMemberPath="Name"
+                             Grid.Row="0"
+                             Grid.Column="1"
+						    x:Name="bulletManfPicker">
+
+                            <combobox:SfComboBox.DropDownHeaderView>
+		                        <StackLayout BackgroundColor="#f0f0f0" >
+								<Label  Text="Bullet Manufacturer" 
+								    VerticalTextAlignment="Center" 
+								    HorizontalOptions="Center" 
+								    VerticalOptions="Center" 
+								    TextColor="#006bcd" />
+							    </StackLayout>
+							</combobox:SfComboBox.DropDownHeaderView>
+
+			            </combobox:SfComboBox>
 
                         <Button Text="New"
                                 x:Name="newBulletManfButton"
@@ -189,19 +252,38 @@
                                 HorizontalOptions="EndAndExpand"
                                 Grid.Row="0"
                                 Grid.Column="2"/>
+                        
+                        <combobox:SfComboBox
+                             Watermark="Select Bullet"
+                            WatermarkColor="LightGray"
+						    IsEditableMode="True"
+						    AllowFiltering="True"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             SelectionChanged="OnBulletSelectionChanged"
+                             WidthRequest="300"
+                            VerticalOptions="CenterAndExpand"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding BulletModel}"
+                             SelectedItem="{Binding SelectedBullet}"
+						    DisplayMemberPath="Name"
+                             Grid.Row="1"
+                             Grid.Column="1"
+						    x:Name="bulletPicker">
 
-                        <Picker Title="Select Bullet"
-                                IsEnabled="False"
-                                x:Name="bulletPicker"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="StartAndExpand"
-                                ItemsSource="{Binding BulletModel}"
-                                ItemDisplayBinding="{Binding Name}"
-                                SelectedItem="{Binding SelectedBullet}"
-                                SelectedIndexChanged="OnBulletSelectionChanged"
-                                Grid.Row="1"
-                                Grid.Column="1"/>
+                            <combobox:SfComboBox.DropDownHeaderView>
+		                        <StackLayout BackgroundColor="#f0f0f0" >
+								<Label  Text="Bullet" 
+								    VerticalTextAlignment="Center" 
+								    HorizontalOptions="Center" 
+								    VerticalOptions="Center" 
+								    TextColor="#006bcd" />
+							    </StackLayout>
+							</combobox:SfComboBox.DropDownHeaderView>
+
+			            </combobox:SfComboBox>
 
                         <Button Text="New"
                                 x:Name="newBulletButton"
@@ -212,18 +294,37 @@
                                 Grid.Row="1"
                                 Grid.Column="2"/>
 
-                        <Picker Title="Select Bullet Weight"
-                                IsEnabled="False"
-                                x:Name="bulletWeightPicker"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                ItemsSource="{Binding BulletWeights}"
-                                ItemDisplayBinding="{Binding Weight}"
-                                SelectedItem="{Binding SelectedBulletWeight}"
-                                VerticalOptions="CenterAndExpand"
-                                SelectedIndexChanged="OnBulletWeightSelected"
-                                HorizontalOptions="StartAndExpand"
-                                Grid.Row="2"
-                                Grid.Column="1"/>
+                        <combobox:SfComboBox
+                             Watermark="Select Weight"
+                            WatermarkColor="LightGray"
+						    IsEditableMode="True"
+						    AllowFiltering="True"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             SelectionChanged="OnBulletWeightSelected"
+                             WidthRequest="300"
+                            VerticalOptions="CenterAndExpand"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding BulletWeights}"
+                             SelectedItem="{Binding SelectedBulletWeight}"
+						    DisplayMemberPath="Weight"
+                             Grid.Row="2"
+                             Grid.Column="1"
+						    x:Name="bulletWeightPicker">
+
+                            <combobox:SfComboBox.DropDownHeaderView>
+		                        <StackLayout BackgroundColor="#f0f0f0" >
+								<Label  Text="Bullet Weight" 
+								    VerticalTextAlignment="Center" 
+								    HorizontalOptions="Center" 
+								    VerticalOptions="Center" 
+								    TextColor="#006bcd" />
+							    </StackLayout>
+							</combobox:SfComboBox.DropDownHeaderView>
+
+			            </combobox:SfComboBox>
 
                         <Button Text="New"
                                 x:Name="newBulletWeightButton"
@@ -256,18 +357,37 @@
                                Grid.Row="0"
                                Grid.Column="0"/>
 
-                        <Picker Title="Select Primer Manufacturer"
-                                IsEnabled="False"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                ItemsSource="{Binding PrimerManufacturer}"
-                                ItemDisplayBinding="{Binding Name}"
-                                SelectedItem="{Binding SelectedPrimerManf}"
-                                x:Name="primerManfPicker"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="StartAndExpand"
-                                SelectedIndexChanged="OnPrimerManfSelectionChanged"
-                                Grid.Row="0"
-                                Grid.Column="1"/>
+                        <combobox:SfComboBox
+                             Watermark="Select Manufacturer"
+                            WatermarkColor="LightGray"
+						    IsEditableMode="True"
+						    AllowFiltering="True"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             SelectionChanged="OnPrimerManfSelectionChanged"
+                             WidthRequest="300"
+                            VerticalOptions="CenterAndExpand"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding PrimerManufacturer}"
+                             SelectedItem="{Binding SelectedPrimerManf}"
+						    DisplayMemberPath="Name"
+                             Grid.Row="0"
+                             Grid.Column="1"
+						    x:Name="primerManfPicker">
+
+                            <combobox:SfComboBox.DropDownHeaderView>
+		                        <StackLayout BackgroundColor="#f0f0f0" >
+								<Label  Text="Primer Manufacturer" 
+								    VerticalTextAlignment="Center" 
+								    HorizontalOptions="Center" 
+								    VerticalOptions="Center" 
+								    TextColor="#006bcd" />
+							    </StackLayout>
+							</combobox:SfComboBox.DropDownHeaderView>
+
+			            </combobox:SfComboBox>
 
                         <Button Text="New"
                                 x:Name="newPrimerManfButton"
@@ -277,17 +397,36 @@
                                 Grid.Row="0"
                                 Grid.Column="2"/>
 
-                        <Picker Title="Select Primer"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                x:Name="primerPicker"
-                                ItemsSource="{Binding PrimerModel}"
-                                ItemDisplayBinding="{Binding Name}"
-                                SelectedItem="{Binding SelectedPrimerModel}"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="StartAndExpand"
-                                IsEnabled="False"
-                                Grid.Row="1"
-                                Grid.Column="1"/>
+                        <combobox:SfComboBox
+                             Watermark="Select Primer"
+                            WatermarkColor="LightGray"
+						    IsEditableMode="True"
+						    AllowFiltering="True"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             SelectionChanged="OnBulletSelectionChanged"
+                             WidthRequest="300"
+                            VerticalOptions="CenterAndExpand"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding PrimerModel}"
+                             SelectedItem="{Binding SelectedPrimerModel}"
+						    DisplayMemberPath="Name"
+                             Grid.Row="1"
+                             Grid.Column="1"
+						    x:Name="primerPicker">
+			            
+                            <combobox:SfComboBox.DropDownHeaderView>
+		                        <StackLayout BackgroundColor="#f0f0f0" >
+								<Label  Text="Primer" 
+								    VerticalTextAlignment="Center" 
+								    HorizontalOptions="Center" 
+								    VerticalOptions="Center" 
+								    TextColor="#006bcd" />
+							    </StackLayout>
+							</combobox:SfComboBox.DropDownHeaderView>
+			            </combobox:SfComboBox>
 
                         <Button Text="New"
                                 x:Name="newPrimerButton"
@@ -320,17 +459,36 @@
                                Grid.Row="0"
                                Grid.Column="0"/>
 
-                        <Picker Title="Select Case Manufacturer"
-                                IsEnabled="False"
-                                ios:Picker.UpdateMode="WhenFinished"
-                                x:Name="caseManfPicker"
-                                ItemsSource="{Binding CaseManufacturer}"
-                                ItemDisplayBinding="{Binding Name}"
-                                SelectedItem="{Binding SelectedBrass}"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="StartAndExpand"
-                                Grid.Row="0"
-                                Grid.Column="1"/>
+                        <combobox:SfComboBox
+                            Watermark="Select Manufacture"
+                            WatermarkColor="LightGray"
+						    IsEditableMode="True"
+						    AllowFiltering="True"
+						    SuggestionMode="Contains"
+						    TextHighlightMode="MultipleOccurrence"
+						    MultiSelectMode="None"
+                             WidthRequest="300"
+                            VerticalOptions="CenterAndExpand"
+						    HorizontalOptions="StartAndExpand"
+						    SuggestionBoxPlacement="Bottom"
+						    DataSource="{Binding CaseManufacturer}"
+                             SelectedItem="{Binding SelectedBrass}"
+						    DisplayMemberPath="Name"
+                             Grid.Row="0"
+                             Grid.Column="1"
+						    x:Name="caseManfPicker">
+
+                            <combobox:SfComboBox.DropDownHeaderView>
+		                        <StackLayout BackgroundColor="#f0f0f0" >
+								<Label  Text="Case Manufacturer" 
+								    VerticalTextAlignment="Center" 
+								    HorizontalOptions="Center" 
+								    VerticalOptions="Center" 
+								    TextColor="#006bcd" />
+							    </StackLayout>
+							</combobox:SfComboBox.DropDownHeaderView>
+
+			            </combobox:SfComboBox>
 
                         <Button Text="New"
                                 x:Name="newCaseManfButton"
@@ -351,7 +509,6 @@
                             x:Name="caseOalEntry"
                             VerticalOptions="CenterAndExpand"
                             HorizontalOptions="StartAndExpand"
-                            IsEnabled="False"
                             Grid.Row="1"
                             Grid.Column="1"
                             Grid.ColumnSpan="2"/>
@@ -367,7 +524,6 @@
                             x:Name="caseHeadspaceEntry"
                             VerticalOptions="CenterAndExpand"
                             HorizontalOptions="StartAndExpand"
-                            IsEnabled="False"
                             Grid.Row="2"
                             Grid.Column="1"
                             Grid.ColumnSpan="2"/>
@@ -538,7 +694,7 @@
                         <Entry x:Name="variationAmountEntry"
                                IsEnabled="False"
                                Unfocused="OnVariationUnFocused"
-                                Placeholder="Enter Variation Amount"
+                                Placeholder="Amount"
                                 HorizontalOptions="StartAndExpand"
                                Text="{Binding SelectedVariationAmount}"
                                 Keyboard="Numeric"

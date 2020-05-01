@@ -32,6 +32,7 @@ namespace LoadDevelopmentUI
             InitializeComponent();
 
             MainPage = new MainPage();
+            //MainPage = new TabbedMainPage();
         }
 
         protected override void OnStart()

@@ -1,10 +1,32 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
 			 x:Class="LoadDevelopmentUI.TestLoadPage" 
 			 Title="Test Load" 
 			 Padding="3,10,3,3">
     <ContentPage.Content>
+        <sfPopup:SfPopupLayout Closed="ActionPopupClosed" x:Name="choicePopup">
+            <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView HeaderTitle="Select Action" 
+			   AcceptButtonText="OK"
+			   AcceptCommand="{Binding PopupAcceptCommand}">
+            <sfPopup:PopupView.ContentTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="5">
+                        <syncfusion:SfRadioGroup x:Name="actionRadioGroup">
+                            <syncfusion:SfRadioButton Text="Edit Shots" IsChecked="{Binding EditShotsChecked}"/>
+                            <syncfusion:SfRadioButton Text="View Target Image" IsChecked="{Binding ViewTargetImageChecked}"/>
+                            <syncfusion:SfRadioButton Text="Keep For Use" IsChecked="{Binding KeepForUseChecked}"/>
+			            </syncfusion:SfRadioGroup>
+		            </StackLayout>
+                </DataTemplate>
+            </sfPopup:PopupView.ContentTemplate>
+        </sfPopup:PopupView>
+    </sfPopup:SfPopupLayout.PopupView>
+
+            <sfPopup:SfPopupLayout.Content>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -78,6 +100,8 @@
 				</ListView>
 		</ScrollView>
         </Grid>
+                </sfPopup:SfPopupLayout.Content>
+	    </sfPopup:SfPopupLayout>
     </ContentPage.Content>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Velocity Graph" Clicked="ViewVelocityGraphToolbarItem_Clicked"/>

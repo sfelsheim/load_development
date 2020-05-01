@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="LoadDevelopmentUI.NewRiflePage"
              Title="New Rifle">
     <ContentPage.Content>
@@ -10,11 +11,21 @@
                    TextChanged="OnNameTextChanged"
                    x:Name="NameEntry"/>
             <StackLayout Orientation="Horizontal">
-            <Picker Title="Select Caliber"
-                    ItemsSource="{Binding Calibers}"
-                    ItemDisplayBinding="{Binding Name}"
-                    x:Name="CaliberPicker"
-                    SelectedIndexChanged="OnCaliberSelectedItem"/>
+
+                <combobox:SfComboBox
+                    IsEditableMode="True"
+                    AllowFiltering="True"
+                    SuggestionMode="Contains"
+                    TextHighlightMode="MultipleOccurrence"
+                    MultiSelectMode="None"
+                    SelectionChanged="OnCaliberSelectedItem"
+                    HorizontalOptions="StartAndExpand"
+                    SuggestionBoxPlacement="Bottom"
+                    DataSource="{Binding Calibers}"
+                    HeightRequest="40"
+                    WidthRequest="300"
+                    DisplayMemberPath="Name"
+                    x:Name="CaliberPicker"/>
 
                 <Button Text="New" Clicked="OnNewCaliberButtonClicked"
                         VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
