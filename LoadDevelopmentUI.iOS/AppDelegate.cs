@@ -1,4 +1,6 @@
 ﻿using Foundation;
+using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.XForms.iOS.EffectsView;
 using UIKit;
 
 namespace LoadDevelopmentUI.iOS
@@ -25,6 +27,9 @@ namespace LoadDevelopmentUI.iOS
             Forms9Patch.iOS.Settings.Initialize(this);
             FileAccessHelper.GetLocalFilePath("master.db");
             Syncfusion.SfImageEditor.XForms.iOS.SfImageEditorRenderer.Init();
+
+            SfListViewRenderer.Init();
+            SfEffectsViewRenderer.Init();
 
             LoadApplication(new App());
             Syncfusion.XForms.iOS.Buttons.SfRadioButtonRenderer.Init();

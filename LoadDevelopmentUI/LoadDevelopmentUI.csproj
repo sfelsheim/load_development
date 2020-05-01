@@ -18,6 +18,7 @@
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.1.0.46" />
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="18.1.0.46" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.46" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ModelView\" />

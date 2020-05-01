@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Input;
 using DataAccess.Model;
 using LoadDevelopmentUI.ModelView;
 using OxyPlot;
