@@ -17,9 +17,14 @@
             <local:TestPage/>
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Use Loads">
+    <NavigationPage Title="Load Catalog">
         <x:Arguments>
             <local:UsePage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Range Log">
+        <x:Arguments>
+            <local:RangeLogPage/>
         </x:Arguments>
     </NavigationPage>
 </TabbedPage>

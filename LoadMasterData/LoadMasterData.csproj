@@ -10,8 +10,8 @@
     <Folder Include="Database\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
-    <PackageReference Include="Csv" Version="1.0.53" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Csv" Version="1.0.58" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LoadDevelopmentUI\LoadDevelopmentUI.csproj" />

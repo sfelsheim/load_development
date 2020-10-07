@@ -41,6 +41,12 @@ namespace LoadDevelopmentUI
 	        }
         }
 
+        protected override void OnDisappearing()
+        {
+		    if (targetImage.IsImageEdited)
+			    targetImage.Save();
+        }
+
         async public void CaptureTargetImageButtonClicked(object sender, EventArgs e)
         {
             if (DependencyService.Get<ISavePhoto>().PhotoExists(imageFileName, IMAGE_DIRECTORY))

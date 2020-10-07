@@ -13,7 +13,7 @@ namespace LoadDevelopmentUI.iOS
     {
         public void CopyPhoto(string fileName, string location, string fromPath)
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             documentsPath = Path.Combine(documentsPath, location);
 
             string toFilePath = Path.Combine(documentsPath, fileName);
@@ -24,7 +24,7 @@ namespace LoadDevelopmentUI.iOS
 
         public void DeletePhoto(string fileName, string location)
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             documentsPath = Path.Combine(documentsPath, location);
 
             string filePath = Path.Combine(documentsPath, fileName);
@@ -34,7 +34,7 @@ namespace LoadDevelopmentUI.iOS
 
         public string GetPhotoPath(string fileName, string location)
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             documentsPath = Path.Combine(documentsPath, location);
 
             return Path.Combine(documentsPath, fileName);
@@ -42,7 +42,7 @@ namespace LoadDevelopmentUI.iOS
 
         public bool PhotoExists(string fileName, string location)
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             documentsPath = Path.Combine(documentsPath, location);
 
             string filePath = Path.Combine(documentsPath, fileName);
@@ -52,7 +52,7 @@ namespace LoadDevelopmentUI.iOS
 
         void ISavePhoto.SavePhoto(string fileName, string location, Stream stream)
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             documentsPath = Path.Combine(documentsPath, location);
             if (!Directory.Exists(documentsPath))
 			    Directory.CreateDirectory(documentsPath);

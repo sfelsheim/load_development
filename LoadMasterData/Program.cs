@@ -9,31 +9,31 @@ namespace LoadMasterData
         static void Main(string[] args)
         {
             LoadDevelopmentDatabase db = new LoadDevelopmentDatabase(
-                @"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/Database/master.db");
+                @"/Users/steve.felsheim/Projects/load_development/LoadMasterData/Database/master.db");
 
             //db.TestLoad();
 
             db.LoadCaliberMaster(
                 new System.IO.StreamReader(
-                    @"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/MasterData/CaliberMaster.csv"));
+                    @"/Users/steve.felsheim/Projects/load_development/LoadMasterData/MasterData/CaliberMaster.csv"));
 
 
             db.LoadPowderManufacturerMaster(new System.IO.StreamReader(
-                @"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/MasterData/PowderManufacturerMaster.csv"));
+                @"/Users/steve.felsheim/Projects/load_development/LoadMasterData/MasterData/PowderManufacturerMaster.csv"));
             db.LoadPowderMaster(new System.IO.StreamReader(
-                @"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/MasterData/PowderMaster.csv"));
+                @"/Users/steve.felsheim/Projects/load_development/LoadMasterData/MasterData/PowderMaster.csv"));
 
-            db.LoadBulletMaster(@"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/MasterData/bulletMaster.db",
-                @"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/Database/master.db");
+            db.LoadBulletMaster(@"/Users/steve.felsheim/Projects/load_development/LoadMasterData/MasterData/bulletMaster.db",
+                @"/Users/steve.felsheim/Projects/load_development/LoadMasterData/Database/master.db");
 
             db.LoadPrimerManufacturerMaster(new System.IO.StreamReader(
-                @"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/MasterData/primers.csv"));
+                @"/Users/steve.felsheim/Projects/load_development/LoadMasterData/MasterData/primers.csv"));
 
             db.LoadPrimerModelMaster(new System.IO.StreamReader(
-                @"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/MasterData/primerModels.csv"));
+                @"/Users/steve.felsheim/Projects/load_development/LoadMasterData/MasterData/primerModels.csv"));
 
             db.LoadBrassMaster(new System.IO.StreamReader(
-                @"/Users/steve.felsheim/Projects/LoadDevelopment/LoadMasterData/MasterData/brass.csv"));
+                @"/Users/steve.felsheim/Projects/load_development/LoadMasterData/MasterData/brass.csv"));
 
             db.CreateDisplayView();
         }

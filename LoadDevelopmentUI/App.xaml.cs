@@ -27,7 +27,8 @@ namespace LoadDevelopmentUI
 
         public App()
         {
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjQyMTk2QDMxMzgyZTMxMmUzMERvQnoxeS9sRVJZZjk5U2pvRndXc1UzOC9JcmdFYTh2NThsczJLWDd6M1k9");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(
+		        "MzE3MzMzQDMxMzgyZTMyMmUzMEw2UTdSREFkNEdDQkJ0TGc5SUQyZnJYalR1WWtYM2kxVEJZbHplNG5LVW89");
 
             InitializeComponent();
 

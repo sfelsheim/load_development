@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:LoadDevelopmentUI"
              xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              x:Class="LoadDevelopmentUI.UsePage"
-             Title="Loads Ready to Use">
+             Title="Load Catalog">
     <ContentPage.Content>
         <syncfusion:SfListView x:Name="UseListView"/>
     </ContentPage.Content>

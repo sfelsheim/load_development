@@ -22,8 +22,6 @@
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
-	<key>CFBundleDisplayName</key>
-	<string>LoadDevelopmentUI</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.pld.LoadDevelopment</string>
 	<key>CFBundleVersion</key>
@@ -42,5 +40,7 @@
 	<string>Load Development needs access to your Photo Library</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Load Development needs access to your Photo Library</string>
+	<key>CFBundleDisplayName</key>
+	<string>Load Developer</string>
 </dict>
 </plist>
